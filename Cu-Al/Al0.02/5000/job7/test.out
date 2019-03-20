@@ -1,0 +1,98 @@
+LAMMPS (12 Dec 2018)
+Lattice spacing in x,y,z = 4 4 4
+Created orthogonal box = (0 0 0) to (68 68 68)
+  1 by 1 by 1 MPI processor grid
+Created 19652 atoms
+  Time spent = 0.00405788 secs
+Setting atom values ...
+  417 settings made for type/fraction
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check no
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8.5
+  ghost atom cutoff = 8.5
+  binsize = 4.25, bins = 16 16 16
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair eam/alloy, perpetual
+      attributes: half, newton on
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/3d/newton
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 18.19 | 18.19 | 18.19 Mbytes
+Step Temp Press TotEng PotEng Enthalpy 
+       0          300   -181486.91   -62960.675   -63722.702   -98578.032 
+    1000    214.77281   -160927.85   -62960.666   -63506.209   -94543.245 
+Loop time of 137.84 on 1 procs for 1000 steps with 19652 atoms
+
+Performance: 0.627 ns/day, 38.289 hours/ns, 7.255 timesteps/s
+99.8% CPU use with 1 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 78.304     | 78.304     | 78.304     |   0.0 | 56.81
+Neigh   | 57.749     | 57.749     | 57.749     |   0.0 | 41.90
+Comm    | 1.0799     | 1.0799     | 1.0799     |   0.0 |  0.78
+Output  | 0.0001111  | 0.0001111  | 0.0001111  |   0.0 |  0.00
+Modify  | 0.35937    | 0.35937    | 0.35937    |   0.0 |  0.26
+Other   |            | 0.3474     |            |       |  0.25
+
+Nlocal:    19652 ave 19652 max 19652 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    19937 ave 19937 max 19937 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    1.57142e+06 ave 1.57142e+06 max 1.57142e+06 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 1571416
+Ave neighs/atom = 79.9621
+Neighbor list builds = 1000
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 18.19 | 18.19 | 18.19 Mbytes
+Step Temp Press TotEng PotEng Enthalpy 
+    1000    214.77281   -160927.85   -62960.666   -63506.209   -94543.245 
+    2000    324.25076   -434.15701   -68083.517   -68907.143   -68149.223 
+Loop time of 156.797 on 1 procs for 1000 steps with 19652 atoms
+
+Performance: 0.551 ns/day, 43.555 hours/ns, 6.378 timesteps/s
+99.1% CPU use with 1 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 83.495     | 83.495     | 83.495     |   0.0 | 53.25
+Neigh   | 70.998     | 70.998     | 70.998     |   0.0 | 45.28
+Comm    | 0.89338    | 0.89338    | 0.89338    |   0.0 |  0.57
+Output  | 0.00017905 | 0.00017905 | 0.00017905 |   0.0 |  0.00
+Modify  | 1.1057     | 1.1057     | 1.1057     |   0.0 |  0.71
+Other   |            | 0.3057     |            |       |  0.19
+
+Nlocal:    19652 ave 19652 max 19652 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    20119 ave 20119 max 20119 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    2.01363e+06 ave 2.01363e+06 max 2.01363e+06 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 2013634
+Ave neighs/atom = 102.465
+Neighbor list builds = 1000
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 19.33 | 19.33 | 19.33 Mbytes
+Step Temp Press TotEng PotEng Enthalpy 
+    2000    324.25076   -434.15701   -68083.517   -68907.143   -68149.223 
+    5000    1123.6377    1019.2564   -63773.331   -66627.473   -63610.825 
+ERROR: Atom count is inconsistent, cannot write restart file (../write_restart.cpp:256)
+Last command: run 8000

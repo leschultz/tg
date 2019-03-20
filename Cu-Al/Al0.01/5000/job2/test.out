@@ -1,0 +1,98 @@
+LAMMPS (12 Dec 2018)
+Lattice spacing in x,y,z = 4 4 4
+Created orthogonal box = (0 0 0) to (68 68 68)
+  1 by 1 by 1 MPI processor grid
+Created 19652 atoms
+  Time spent = 0.0102661 secs
+Setting atom values ...
+  206 settings made for type/fraction
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check no
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8.5
+  ghost atom cutoff = 8.5
+  binsize = 4.25, bins = 16 16 16
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair eam/alloy, perpetual
+      attributes: half, newton on
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/3d/newton
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 18.19 | 18.19 | 18.19 Mbytes
+Step Temp Press TotEng PotEng Enthalpy 
+       0          300   -182490.73   -62801.484   -63563.511   -98615.843 
+    1000    180.37591   -167584.72   -62801.472   -63259.643   -95690.482 
+Loop time of 176.812 on 1 procs for 1000 steps with 19652 atoms
+
+Performance: 0.489 ns/day, 49.114 hours/ns, 5.656 timesteps/s
+99.7% CPU use with 1 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 108.33     | 108.33     | 108.33     |   0.0 | 61.27
+Neigh   | 65.033     | 65.033     | 65.033     |   0.0 | 36.78
+Comm    | 1.9899     | 1.9899     | 1.9899     |   0.0 |  1.13
+Output  | 0.00023699 | 0.00023699 | 0.00023699 |   0.0 |  0.00
+Modify  | 0.88486    | 0.88486    | 0.88486    |   0.0 |  0.50
+Other   |            | 0.5706     |            |       |  0.32
+
+Nlocal:    19652 ave 19652 max 19652 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    20065 ave 20065 max 20065 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    1.56692e+06 ave 1.56692e+06 max 1.56692e+06 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 1566922
+Ave neighs/atom = 79.7335
+Neighbor list builds = 1000
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 18.19 | 18.19 | 18.19 Mbytes
+Step Temp Press TotEng PotEng Enthalpy 
+    1000    180.37591   -167584.72   -62801.472   -63259.643   -95690.482 
+    2000    303.06261   -256.98955   -68113.572   -68883.379   -68152.307 
+Loop time of 231.2 on 1 procs for 1000 steps with 19652 atoms
+
+Performance: 0.374 ns/day, 64.222 hours/ns, 4.325 timesteps/s
+99.7% CPU use with 1 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 133.59     | 133.59     | 133.59     |   0.0 | 57.78
+Neigh   | 92.74      | 92.74      | 92.74      |   0.0 | 40.11
+Comm    | 2.0048     | 2.0048     | 2.0048     |   0.0 |  0.87
+Output  | 0.00022292 | 0.00022292 | 0.00022292 |   0.0 |  0.00
+Modify  | 2.2815     | 2.2815     | 2.2815     |   0.0 |  0.99
+Other   |            | 0.5793     |            |       |  0.25
+
+Nlocal:    19652 ave 19652 max 19652 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    20106 ave 20106 max 20106 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    2.02026e+06 ave 2.02026e+06 max 2.02026e+06 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 2020262
+Ave neighs/atom = 102.802
+Neighbor list builds = 1000
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 19.34 | 19.34 | 19.34 Mbytes
+Step Temp Press TotEng PotEng Enthalpy 
+    2000    303.06261   -256.98955   -68113.572   -68883.379   -68152.307 
+    5000     1112.142    452.02087   -63707.872   -66532.814   -63635.936 
+ERROR: Atom count is inconsistent, cannot write restart file (../write_restart.cpp:256)
+Last command: run 8000

@@ -1,0 +1,99 @@
+LAMMPS (12 Dec 2018)
+Lattice spacing in x,y,z = 4 4 4
+Created orthogonal box = (0 0 0) to (68 68 68)
+  1 by 1 by 2 MPI processor grid
+Created 19652 atoms
+  Time spent = 0.0014441 secs
+Setting atom values ...
+  206 settings made for type/fraction
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check no
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8.5
+  ghost atom cutoff = 8.5
+  binsize = 4.25, bins = 16 16 16
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair eam/alloy, perpetual
+      attributes: half, newton on
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/3d/newton
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 11.15 | 11.15 | 11.15 Mbytes
+Step Temp Press TotEng PotEng Enthalpy 
+       0          300   -182490.73   -62801.484   -63563.511   -98615.843 
+    1000    190.49409    -167019.1   -62801.473   -63285.345   -95579.478 
+Loop time of 76.3676 on 2 procs for 1000 steps with 19652 atoms
+
+Performance: 1.131 ns/day, 21.213 hours/ns, 13.095 timesteps/s
+99.5% CPU use with 2 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 42.97      | 43.043     | 43.115     |   1.1 | 56.36
+Neigh   | 29.641     | 30.139     | 30.638     |   9.1 | 39.47
+Comm    | 2.3951     | 2.8271     | 3.259      |  25.7 |  3.70
+Output  | 8.9169e-05 | 0.00010955 | 0.00012994 |   0.0 |  0.00
+Modify  | 0.17462    | 0.18026    | 0.1859     |   1.3 |  0.24
+Other   |            | 0.1782     |            |       |  0.23
+
+Nlocal:    9826 ave 9842 max 9810 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Nghost:    14186.5 ave 14217 max 14156 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Neighs:    784060 ave 784783 max 783336 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+
+Total # of neighbors = 1568119
+Ave neighs/atom = 79.7944
+Neighbor list builds = 1000
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 11.15 | 11.15 | 11.15 Mbytes
+Step Temp Press TotEng PotEng Enthalpy 
+    1000    190.49409    -167019.1   -62801.473   -63285.345   -95579.478 
+    2000    309.95505   -317.56621   -68055.208   -68842.522   -68103.144 
+Loop time of 98.9736 on 2 procs for 1000 steps with 19652 atoms
+
+Performance: 0.873 ns/day, 27.493 hours/ns, 10.104 timesteps/s
+99.3% CPU use with 2 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 52.221     | 52.854     | 53.488     |   8.7 | 53.40
+Neigh   | 40.061     | 41.77      | 43.478     |  26.4 | 42.20
+Comm    | 2.358      | 3.4475     | 4.5371     |  58.7 |  3.48
+Output  | 9.1076e-05 | 0.00012708 | 0.00016308 |   0.0 |  0.00
+Modify  | 0.70712    | 0.7182     | 0.72928    |   1.3 |  0.73
+Other   |            | 0.1838     |            |       |  0.19
+
+Nlocal:    9826 ave 10093 max 9559 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Nghost:    14216.5 ave 14487 max 13946 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Neighs:    1.00886e+06 ave 1.04189e+06 max 975838 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+
+Total # of neighbors = 2017724
+Ave neighs/atom = 102.673
+Neighbor list builds = 1000
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 11.54 | 11.73 | 11.92 Mbytes
+Step Temp Press TotEng PotEng Enthalpy 
+    2000    309.95505   -317.56621   -68055.208   -68842.522   -68103.144 
+ERROR on proc 0: Too many neighbor bins (../nbin_standard.cpp:184)
+Last command: run 8000
+ERROR on proc 1: Too many neighbor bins (../nbin_standard.cpp:184)
+Last command: run 8000

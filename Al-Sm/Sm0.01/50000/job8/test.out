@@ -1,0 +1,3403 @@
+TACC:  Starting up job 3077062 
+TACC:  Starting parallel tasks... 
+LAMMPS (16 Mar 2018)
+Lattice spacing in x,y,z = 4 4 4
+Created orthogonal box = (0 0 0) to (68 68 68)
+  2 by 2 by 4 MPI processor grid
+Created 19652 atoms
+  Time spent = 0.00339508 secs
+Setting atom values ...
+  206 settings made for type/fraction
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check no
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 10
+  ghost atom cutoff = 10
+  binsize = 5, bins = 14 14 14
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair eam/fs, perpetual
+      attributes: half, newton on
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/3d/newton
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.921 | 4.925 | 4.929 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+       0          300    42702.571   -75848.808   -76610.835   -67468.298       314432 
+    1000    193.68786    49600.967   -75848.708   -76340.692   -66114.367       314432 
+Loop time of 51.6801 on 16 procs for 1000 steps with 19652 atoms
+
+Performance: 1.672 ns/day, 14.356 hours/ns, 19.350 timesteps/s
+99.7% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 31.207     | 32.337     | 34.147     |  13.3 | 62.57
+Neigh   | 15.907     | 16.528     | 17.13      |   8.8 | 31.98
+Comm    | 1.2085     | 2.6367     | 3.9988     |  47.8 |  5.10
+Output  | 0.00012994 | 0.00039347 | 0.0010512  |   0.0 |  0.00
+Modify  | 0.07594    | 0.07817    | 0.080076   |   0.4 |  0.15
+Other   |            | 0.09985    |            |       |  0.19
+
+Nlocal:    1228.25 ave 1254 max 1186 min
+Histogram: 1 1 2 0 1 0 3 2 3 3
+Nghost:    5509.19 ave 5555 max 5447 min
+Histogram: 3 0 2 1 0 2 1 0 4 3
+Neighs:    153492 ave 161756 max 145138 min
+Histogram: 2 0 1 3 3 1 2 1 0 3
+
+Total # of neighbors = 2455871
+Ave neighs/atom = 124.968
+Neighbor list builds = 1000
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.921 | 4.925 | 4.929 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+    1000    193.68786    49600.967   -75848.708   -76340.692   -66114.367       314432 
+    2000    307.70455   -162.90829   -75414.998   -76196.596   -75449.053    334924.09 
+Loop time of 51.6476 on 16 procs for 1000 steps with 19652 atoms
+
+Performance: 1.673 ns/day, 14.347 hours/ns, 19.362 timesteps/s
+99.5% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 31.229     | 32.097     | 34.644     |  15.4 | 62.15
+Neigh   | 15.231     | 15.938     | 16.481     |   8.9 | 30.86
+Comm    | 0.95835    | 2.8134     | 4.7367     |  68.6 |  5.45
+Output  | 9.799e-05  | 0.00012338 | 0.00038695 |   0.0 |  0.00
+Modify  | 0.28962    | 0.68739    | 1.847      |  80.7 |  1.33
+Other   |            | 0.1121     |            |       |  0.22
+
+Nlocal:    1228.25 ave 1257 max 1194 min
+Histogram: 1 3 0 1 3 0 2 1 3 2
+Nghost:    4894 ave 4935 max 4865 min
+Histogram: 4 1 2 1 1 2 2 1 1 1
+Neighs:    144757 ave 154455 max 138316 min
+Histogram: 1 5 0 1 3 3 2 0 0 1
+
+Total # of neighbors = 2316117
+Ave neighs/atom = 117.857
+Neighbor list builds = 1000
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.921 | 4.925 | 4.929 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+    2000    307.70455   -162.90829   -75414.998   -76196.596   -75449.053    334924.09 
+   10000    2436.2581   -222.39233   -61385.755   -67574.073   -61444.887    426004.33 
+Loop time of 379.317 on 16 procs for 8000 steps with 19652 atoms
+
+Performance: 1.822 ns/day, 13.171 hours/ns, 21.091 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 231.51     | 239.65     | 250.99     |  37.5 | 63.18
+Neigh   | 113.9      | 115.55     | 117.15     |   9.2 | 30.46
+Comm    | 8.7883     | 19.254     | 27.655     | 151.2 |  5.08
+Output  | 8.297e-05  | 0.00010416 | 0.00034714 |   0.0 |  0.00
+Modify  | 2.4623     | 3.9568     | 6.4232     |  82.2 |  1.04
+Other   |            | 0.9096     |            |       |  0.24
+
+Nlocal:    1228.25 ave 1246 max 1214 min
+Histogram: 2 1 1 1 2 6 2 0 0 1
+Nghost:    4727.19 ave 4760 max 4699 min
+Histogram: 3 0 3 0 3 2 1 2 1 1
+Neighs:    118051 ave 121661 max 115427 min
+Histogram: 3 2 0 3 2 2 1 1 1 1
+
+Total # of neighbors = 1888814
+Ave neighs/atom = 96.1131
+Neighbor list builds = 8000
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 10000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.924 | 4.928 | 4.931 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+   10000    2436.2581   -222.39233   -61385.755   -67574.073   -61444.887    426004.33 
+   40000    2452.6494     688.2937   -61367.181   -67597.134   -61184.621    424954.99 
+Loop time of 1309.58 on 16 procs for 30000 steps with 19652 atoms
+
+Performance: 1.979 ns/day, 12.126 hours/ns, 22.908 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 807.4      | 834.96     | 864.75     |  53.3 | 63.76
+Neigh   | 378.17     | 381.03     | 382.99     |   7.9 | 29.10
+Comm    | 45.879     | 77.496     | 110.62     | 192.4 |  5.92
+Output  | 0.00011301 | 0.00013605 | 0.00039005 |   0.0 |  0.00
+Modify  | 9.7576     | 12.651     | 20.951     | 134.6 |  0.97
+Other   |            | 3.44       |            |       |  0.26
+
+Nlocal:    1228.25 ave 1253 max 1203 min
+Histogram: 1 0 2 4 0 3 2 1 2 1
+Nghost:    4724.62 ave 4757 max 4684 min
+Histogram: 2 1 1 1 2 1 2 1 2 3
+Neighs:    118390 ave 122273 max 114094 min
+Histogram: 1 0 2 2 3 2 3 0 1 2
+
+Total # of neighbors = 1894247
+Ave neighs/atom = 96.3895
+Neighbor list builds = 30000
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 40000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.924 | 4.928 | 4.931 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+   40000    2452.6494     688.2937   -61367.181   -67597.134   -61184.621    424954.99 
+   40495    2401.7105    1235.8087   -61579.974   -67680.538   -61253.002    423905.65 
+Loop time of 20.997 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 2.037 ns/day, 11.783 hours/ns, 23.575 timesteps/s
+99.4% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.052     | 13.511     | 13.903     |   5.9 | 64.35
+Neigh   | 6.0401     | 6.129      | 6.269      |   2.7 | 29.19
+Comm    | 0.5293     | 1.0279     | 1.6125     |  28.0 |  4.90
+Output  | 0.00010705 | 0.00012946 | 0.00040913 |   0.0 |  0.00
+Modify  | 0.15057    | 0.27234    | 0.51963    |  28.1 |  1.30
+Other   |            | 0.05691    |            |       |  0.27
+
+Nlocal:    1228.25 ave 1252 max 1213 min
+Histogram: 2 2 2 1 5 1 2 0 0 1
+Nghost:    4717.5 ave 4746 max 4683 min
+Histogram: 1 1 2 1 2 2 2 1 1 3
+Neighs:    118665 ave 124669 max 114862 min
+Histogram: 2 2 2 3 3 2 0 1 0 1
+
+Total # of neighbors = 1898644
+Ave neighs/atom = 96.6133
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 40495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.924 | 4.928 | 4.931 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+   40495    2401.7105    1235.8087   -61579.974   -67680.538   -61253.002    423905.65 
+   50000    2402.4023    904.85943   -61631.571   -67733.892   -61392.565    423193.31 
+   90000    2394.4662   -256.01885   -61601.818    -67683.98    -61669.64    424433.72 
+Loop time of 2096.35 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 2.040 ns/day, 11.763 hours/ns, 23.615 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1324.6     | 1355.7     | 1385.1     |  48.4 | 64.67
+Neigh   | 623.28     | 628.05     | 631.17     |  10.4 | 29.96
+Comm    | 59.048     | 86.648     | 124.63     | 203.1 |  4.13
+Output  | 0.16007    | 0.16027    | 0.16169    |   0.1 |  0.01
+Modify  | 15.406     | 20.068     | 31.986     | 154.0 |  0.96
+Other   |            | 5.691      |            |       |  0.27
+
+Nlocal:    1228.25 ave 1246 max 1209 min
+Histogram: 2 1 2 1 1 3 1 2 0 3
+Nghost:    4724.19 ave 4777 max 4687 min
+Histogram: 1 2 3 2 2 2 2 1 0 1
+Neighs:    118482 ave 121798 max 114680 min
+Histogram: 1 3 1 1 1 1 2 2 1 3
+
+Total # of neighbors = 1895707
+Ave neighs/atom = 96.4638
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 90000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.928 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+   90000    2394.4662   -256.01885   -61601.818    -67683.98    -61669.64    424433.72 
+   90495    2353.2425    141.40785    -61848.49   -67825.941   -61811.202    422488.95 
+Loop time of 20.9093 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 2.045 ns/day, 11.734 hours/ns, 23.674 timesteps/s
+99.5% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 12.982     | 13.503     | 13.926     |   5.7 | 64.58
+Neigh   | 6.0215     | 6.1372     | 6.2332     |   2.6 | 29.35
+Comm    | 0.47879    | 0.98184    | 1.511      |  28.3 |  4.70
+Output  | 0.0001049  | 0.00013022 | 0.00040483 |   0.0 |  0.00
+Modify  | 0.15169    | 0.23015    | 0.34022    |  16.7 |  1.10
+Other   |            | 0.05676    |            |       |  0.27
+
+Nlocal:    1228.25 ave 1243 max 1214 min
+Histogram: 1 0 5 0 2 2 3 0 2 1
+Nghost:    4741 ave 4774 max 4717 min
+Histogram: 1 0 6 1 3 2 1 0 1 1
+Neighs:    119085 ave 123017 max 116017 min
+Histogram: 3 0 2 4 1 1 2 0 2 1
+
+Total # of neighbors = 1905361
+Ave neighs/atom = 96.9551
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 90495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.928 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+   90495    2353.2425    141.40785    -61848.49   -67825.941   -61811.202    422488.95 
+  100000    2334.7333    453.39779   -61861.688   -67792.123   -61742.075    422675.87 
+  140000     2351.099   -622.37953   -61925.407   -67897.413   -62089.465    422330.47 
+Loop time of 2144.94 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.994 ns/day, 12.036 hours/ns, 23.080 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1334.7     | 1372.3     | 1416.9     |  61.4 | 63.98
+Neigh   | 639.09     | 643.19     | 645.94     |   8.3 | 29.99
+Comm    | 60.924     | 102.87     | 144.5      | 230.5 |  4.80
+Output  | 0.14184    | 0.14189    | 0.14241    |   0.0 |  0.01
+Modify  | 15.262     | 20.755     | 34.731     | 177.2 |  0.97
+Other   |            | 5.679      |            |       |  0.26
+
+Nlocal:    1228.25 ave 1256 max 1203 min
+Histogram: 1 1 2 1 4 2 2 2 0 1
+Nghost:    4747.5 ave 4778 max 4708 min
+Histogram: 1 1 0 1 3 1 5 2 0 2
+Neighs:    119107 ave 123906 max 115825 min
+Histogram: 2 1 4 2 3 1 0 1 1 1
+
+Total # of neighbors = 1905708
+Ave neighs/atom = 96.9727
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 140000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.928 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  140000     2351.099   -622.37953   -61925.407   -67897.413   -62089.465    422330.47 
+  140495    2301.0062   -373.07719   -62062.077   -67906.843   -62160.319    421895.82 
+Loop time of 20.6015 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 2.076 ns/day, 11.561 hours/ns, 24.027 timesteps/s
+99.5% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 12.913     | 13.341     | 13.683     |   6.1 | 64.76
+Neigh   | 6.043      | 6.1381     | 6.25       |   2.1 | 29.79
+Comm    | 0.46874    | 0.84792    | 1.39       |  26.2 |  4.12
+Output  | 0.0001049  | 0.00012492 | 0.00037503 |   0.0 |  0.00
+Modify  | 0.14875    | 0.21744    | 0.41534    |  24.5 |  1.06
+Other   |            | 0.05707    |            |       |  0.28
+
+Nlocal:    1228.25 ave 1248 max 1210 min
+Histogram: 1 2 1 1 4 2 2 1 1 1
+Nghost:    4733.25 ave 4753 max 4702 min
+Histogram: 1 1 0 2 2 1 0 4 2 3
+Neighs:    119237 ave 122736 max 115165 min
+Histogram: 1 1 3 1 1 2 1 3 1 2
+
+Total # of neighbors = 1907788
+Ave neighs/atom = 97.0786
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 140495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.928 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  140495    2301.0062   -373.07719   -62062.077   -67906.843   -62160.319    421895.82 
+  150000    2258.1011   -369.69125   -62244.729   -67980.512   -62341.834    420834.13 
+  190000    2300.8885   -648.24045   -62129.464    -67973.93   -62299.978    421439.12 
+Loop time of 2188.58 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.954 ns/day, 12.280 hours/ns, 22.620 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1316.5     | 1359.1     | 1409.6     |  86.7 | 62.10
+Neigh   | 701.97     | 704.33     | 706.4      |   5.0 | 32.18
+Comm    | 53.21      | 98.233     | 146.16     | 364.6 |  4.49
+Output  | 0.13105    | 0.13124    | 0.13245    |   0.1 |  0.01
+Modify  | 15.224     | 21.071     | 37.243     | 203.1 |  0.96
+Other   |            | 5.67       |            |       |  0.26
+
+Nlocal:    1228.25 ave 1243 max 1214 min
+Histogram: 2 0 3 2 0 3 2 0 3 1
+Nghost:    4731.69 ave 4763 max 4701 min
+Histogram: 2 1 2 1 1 3 2 2 0 2
+Neighs:    119320 ave 123224 max 114894 min
+Histogram: 2 1 2 1 2 1 0 3 2 2
+
+Total # of neighbors = 1909128
+Ave neighs/atom = 97.1468
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 190000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  190000    2300.8885   -648.24045   -62129.464    -67973.93   -62299.978    421439.12 
+  190495    2255.0503    154.23546   -62384.891   -68112.924   -62344.534    419219.29 
+Loop time of 21.3335 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 2.005 ns/day, 11.972 hours/ns, 23.203 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 12.681     | 13.26      | 13.824     |   9.5 | 62.16
+Neigh   | 6.7835     | 6.8725     | 7.035      |   2.1 | 32.21
+Comm    | 0.46692    | 0.92782    | 1.6625     |  40.6 |  4.35
+Output  | 0.00010896 | 0.00013019 | 0.00038314 |   0.0 |  0.00
+Modify  | 0.15055    | 0.21645    | 0.40444    |  23.3 |  1.01
+Other   |            | 0.05674    |            |       |  0.27
+
+Nlocal:    1228.25 ave 1244 max 1210 min
+Histogram: 1 1 2 0 1 5 2 1 1 2
+Nghost:    4760.94 ave 4790 max 4733 min
+Histogram: 1 1 2 4 1 2 0 2 2 1
+Neighs:    119984 ave 125054 max 114383 min
+Histogram: 1 2 2 3 0 0 2 3 1 2
+
+Total # of neighbors = 1919751
+Ave neighs/atom = 97.6873
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 190495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  190495    2255.0503    154.23546   -62384.891   -68112.924   -62344.534    419219.29 
+  200000    2257.1953   -1264.5078   -62330.166   -68063.648   -62662.239    420748.39 
+  240000     2231.851   -1780.9829   -62415.101   -68084.205   -62882.911    420842.98 
+Loop time of 2219.92 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.927 ns/day, 12.456 hours/ns, 22.300 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1317.7     | 1374.5     | 1423.4     |  86.8 | 61.92
+Neigh   | 705.38     | 707.25     | 711.33     |   5.6 | 31.86
+Comm    | 64.228     | 109.61     | 173.78     | 363.9 |  4.94
+Output  | 0.13822    | 0.13825    | 0.13874    |   0.0 |  0.01
+Modify  | 15.354     | 22.785     | 41.555     | 227.7 |  1.03
+Other   |            | 5.668      |            |       |  0.26
+
+Nlocal:    1228.25 ave 1252 max 1212 min
+Histogram: 2 2 3 2 0 2 2 2 0 1
+Nghost:    4752.94 ave 4794 max 4708 min
+Histogram: 1 1 0 1 3 3 5 1 0 1
+Neighs:    119496 ave 124152 max 114185 min
+Histogram: 1 1 2 2 1 2 2 3 1 1
+
+Total # of neighbors = 1911935
+Ave neighs/atom = 97.2896
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 240000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  240000     2231.851   -1780.9829   -62415.101   -68084.205   -62882.911    420842.98 
+  240495    2208.5886   -737.64276   -62654.117   -68264.133   -62846.575    418023.19 
+Loop time of 21.2839 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 2.009 ns/day, 11.944 hours/ns, 23.257 timesteps/s
+99.5% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 12.805     | 13.266     | 13.755     |   8.3 | 62.33
+Neigh   | 6.8184     | 6.8708     | 6.9422     |   1.5 | 32.28
+Comm    | 0.4918     | 0.88899    | 1.3959     |  35.2 |  4.18
+Output  | 0.00010896 | 0.00013043 | 0.00041604 |   0.0 |  0.00
+Modify  | 0.15005    | 0.20116    | 0.34889    |  19.0 |  0.95
+Other   |            | 0.05699    |            |       |  0.27
+
+Nlocal:    1228.25 ave 1246 max 1212 min
+Histogram: 1 0 2 5 2 2 0 2 0 2
+Nghost:    4773.94 ave 4808 max 4737 min
+Histogram: 1 3 1 0 0 3 4 1 2 1
+Neighs:    120316 ave 123528 max 116642 min
+Histogram: 3 2 1 0 1 1 1 1 3 3
+
+Total # of neighbors = 1925048
+Ave neighs/atom = 97.9568
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 240495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  240495    2208.5886   -737.64276   -62654.117   -68264.133   -62846.575    418023.19 
+  250000    2199.2453    322.58402   -62695.553   -68281.837    -62611.53     417318.2 
+  290000    2185.0001     715.9265   -62741.712   -68291.811   -62555.509    416703.86 
+Loop time of 2235.06 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.914 ns/day, 12.541 hours/ns, 22.149 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1335.3     | 1381.7     | 1442.8     |  97.3 | 61.82
+Neigh   | 705.15     | 707.11     | 709.81     |   5.1 | 31.64
+Comm    | 58.102     | 120.11     | 171.97     | 372.0 |  5.37
+Output  | 0.14613    | 0.14644    | 0.14808    |   0.1 |  0.01
+Modify  | 15.338     | 20.254     | 28.423     | 116.5 |  0.91
+Other   |            | 5.693      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1249 max 1211 min
+Histogram: 2 1 1 4 2 2 1 0 2 1
+Nghost:    4753.12 ave 4777 max 4717 min
+Histogram: 1 1 1 0 2 1 3 3 1 3
+Neighs:    120722 ave 125996 max 116731 min
+Histogram: 3 2 3 0 1 2 1 1 1 2
+
+Total # of neighbors = 1931546
+Ave neighs/atom = 98.2875
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 290000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  290000    2185.0001     715.9265   -62741.712   -68291.811   -62555.509    416703.86 
+  290495    2171.3837   -471.31159   -62885.121   -68400.634   -63007.552    416192.44 
+Loop time of 21.3705 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 2.001 ns/day, 11.992 hours/ns, 23.163 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 12.897     | 13.346     | 13.808     |   8.8 | 62.45
+Neigh   | 6.7509     | 6.8717     | 6.9569     |   2.1 | 32.16
+Comm    | 0.50348    | 0.90671    | 1.3622     |  33.9 |  4.24
+Output  | 0.00010204 | 0.00012231 | 0.00036097 |   0.0 |  0.00
+Modify  | 0.15358    | 0.18901    | 0.27895    |  12.0 |  0.88
+Other   |            | 0.05655    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1254 max 1213 min
+Histogram: 4 3 2 0 2 0 2 2 0 1
+Nghost:    4776.88 ave 4806 max 4755 min
+Histogram: 2 2 3 4 0 0 1 1 1 2
+Neighs:    120816 ave 127779 max 115636 min
+Histogram: 3 2 1 2 1 3 1 1 1 1
+
+Total # of neighbors = 1933062
+Ave neighs/atom = 98.3646
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 290495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  290495    2171.3837   -471.31159   -62885.121   -68400.634   -63007.552    416192.44 
+  300000    2133.1519   -566.91406   -63025.313   -68443.713   -63172.461    415860.34 
+  340000    2158.5136    842.36764   -62966.146   -68448.967   -62747.983    414942.69 
+Loop time of 2334.03 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.833 ns/day, 13.096 hours/ns, 21.210 timesteps/s
+99.5% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1368.7     | 1420.6     | 1541       | 128.3 | 60.87
+Neigh   | 705.27     | 706.89     | 708.59     |   3.5 | 30.29
+Comm    | 58.185     | 178.1      | 237.67     | 392.8 |  7.63
+Output  | 0.34139    | 0.34143    | 0.34192    |   0.0 |  0.01
+Modify  | 15.163     | 22.416     | 34.927     | 166.2 |  0.96
+Other   |            | 5.673      |            |       |  0.24
+
+Nlocal:    1228.25 ave 1245 max 1207 min
+Histogram: 1 0 2 1 2 2 2 4 0 2
+Nghost:    4783.19 ave 4800 max 4751 min
+Histogram: 1 0 0 0 2 3 4 2 2 2
+Neighs:    121205 ave 126409 max 117387 min
+Histogram: 4 3 1 0 1 1 2 1 1 2
+
+Total # of neighbors = 1939274
+Ave neighs/atom = 98.6807
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 340000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  340000    2158.5136    842.36764   -62966.146   -68448.967   -62747.983    414942.69 
+  340495    2112.6149    854.60663   -63147.424   -68513.658   -62926.603    413983.44 
+Loop time of 21.4575 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.993 ns/day, 12.041 hours/ns, 23.069 timesteps/s
+99.5% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.046     | 13.434     | 13.797     |   8.2 | 62.61
+Neigh   | 6.7727     | 6.8688     | 6.9216     |   1.8 | 32.01
+Comm    | 0.48887    | 0.91203    | 1.3623     |  33.6 |  4.25
+Output  | 0.00010514 | 0.0001284  | 0.00040889 |   0.0 |  0.00
+Modify  | 0.15158    | 0.18573    | 0.26822    |  11.1 |  0.87
+Other   |            | 0.05705    |            |       |  0.27
+
+Nlocal:    1228.25 ave 1241 max 1211 min
+Histogram: 1 0 1 2 2 2 2 2 2 2
+Nghost:    4787 ave 4820 max 4735 min
+Histogram: 1 2 0 3 1 1 0 1 1 6
+Neighs:    121494 ave 126255 max 117511 min
+Histogram: 4 0 2 2 1 0 1 4 0 2
+
+Total # of neighbors = 1943907
+Ave neighs/atom = 98.9165
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 340495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  340495    2112.6149    854.60663   -63147.424   -68513.658   -62926.603    413983.44 
+  350000    2111.6253    99.657121   -63241.804   -68605.525   -63216.079    413574.52 
+  390000    2083.2523    246.12988     -63261.6   -68553.251   -63198.004    413978.52 
+Loop time of 2402.57 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.780 ns/day, 13.481 hours/ns, 20.605 timesteps/s
+99.5% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1397       | 1450.9     | 1605.8     | 147.9 | 60.39
+Neigh   | 704.54     | 707.1      | 710.33     |   5.0 | 29.43
+Comm    | 60.809     | 216.05     | 276.93     | 408.0 |  8.99
+Output  | 0.15805    | 0.15818    | 0.15949    |   0.1 |  0.01
+Modify  | 15.48      | 22.71      | 36.23      | 173.0 |  0.95
+Other   |            | 5.668      |            |       |  0.24
+
+Nlocal:    1228.25 ave 1250 max 1211 min
+Histogram: 1 4 1 1 2 3 0 2 1 1
+Nghost:    4790.94 ave 4816 max 4765 min
+Histogram: 2 1 1 1 2 4 1 1 1 2
+Neighs:    121488 ave 126401 max 117097 min
+Histogram: 3 2 1 0 2 1 2 2 1 2
+
+Total # of neighbors = 1943807
+Ave neighs/atom = 98.9114
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 390000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  390000    2083.2523    246.12988     -63261.6   -68553.251   -63198.004    413978.52 
+  390495    2068.0319    109.17878    -63434.09    -68687.08   -63405.987     412410.2 
+Loop time of 26.5556 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.611 ns/day, 14.902 hours/ns, 18.640 timesteps/s
+99.5% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 14.361     | 15.354     | 18.981     |  33.7 | 57.82
+Neigh   | 6.7691     | 6.8833     | 7.0026     |   2.3 | 25.92
+Comm    | 0.46281    | 3.9689     | 5.0126     |  66.2 | 14.95
+Output  | 8.893e-05  | 0.00011022 | 0.00035501 |   0.0 |  0.00
+Modify  | 0.14727    | 0.29248    | 0.71158    |  44.7 |  1.10
+Other   |            | 0.05672    |            |       |  0.21
+
+Nlocal:    1228.25 ave 1252 max 1205 min
+Histogram: 1 2 1 0 5 1 3 2 0 1
+Nghost:    4785.31 ave 4811 max 4765 min
+Histogram: 2 4 1 1 1 1 1 2 2 1
+Neighs:    121900 ave 126150 max 117675 min
+Histogram: 2 2 3 0 1 1 1 1 3 2
+
+Total # of neighbors = 1950403
+Ave neighs/atom = 99.247
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 390495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  390495    2068.0319    109.17878    -63434.09    -68687.08   -63405.987     412410.2 
+  400000    2042.3624    669.06444   -63537.587   -68725.373   -63365.596    411856.67 
+  440000     2045.954    438.04391   -63519.675   -68716.585   -63406.949    412304.65 
+Loop time of 2412.31 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.773 ns/day, 13.536 hours/ns, 20.522 timesteps/s
+99.5% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1396.2     | 1455.8     | 1618.2     | 159.3 | 60.35
+Neigh   | 704.59     | 706.84     | 708.98     |   4.6 | 29.30
+Comm    | 55.196     | 220.64     | 286.77     | 430.0 |  9.15
+Output  | 0.16617    | 0.16635    | 0.16668    |   0.0 |  0.01
+Modify  | 15.344     | 23.201     | 34.738     | 156.7 |  0.96
+Other   |            | 5.7        |            |       |  0.24
+
+Nlocal:    1228.25 ave 1241 max 1212 min
+Histogram: 1 0 0 2 5 3 1 1 0 3
+Nghost:    4789.94 ave 4811 max 4761 min
+Histogram: 2 0 0 2 3 1 1 2 2 3
+Neighs:    121972 ave 126656 max 117239 min
+Histogram: 2 4 1 1 0 0 0 3 3 2
+
+Total # of neighbors = 1951558
+Ave neighs/atom = 99.3058
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 440000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  440000     2045.954    438.04391   -63519.675   -68716.585   -63406.949    412304.65 
+  440495    2002.8099    709.26223   -63713.783   -68801.102   -63531.845    410986.75 
+Loop time of 21.5544 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.984 ns/day, 12.096 hours/ns, 22.965 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.169     | 13.489     | 14.02      |   6.9 | 62.58
+Neigh   | 6.8032     | 6.8705     | 6.9384     |   1.4 | 31.88
+Comm    | 0.44605    | 0.93397    | 1.2782     |  29.6 |  4.33
+Output  | 0.0001111  | 0.00013328 | 0.00040698 |   0.0 |  0.00
+Modify  | 0.14478    | 0.20379    | 0.36373    |  20.4 |  0.95
+Other   |            | 0.05703    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1247 max 1209 min
+Histogram: 2 1 1 2 1 2 2 3 1 1
+Nghost:    4822.5 ave 4865 max 4801 min
+Histogram: 5 0 3 4 0 2 0 1 0 1
+Neighs:    122385 ave 126569 max 117010 min
+Histogram: 1 1 3 0 2 2 1 0 3 3
+
+Total # of neighbors = 1958154
+Ave neighs/atom = 99.6415
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 440495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  440495    2002.8099    709.26223   -63713.783   -68801.102   -63531.845    410986.75 
+  450000    1986.7933   -41.862395   -63794.667   -68841.303   -63805.405    410990.49 
+  490000    1983.3002    219.58575   -63818.324   -68856.087   -63762.046    410620.82 
+Loop time of 2208.36 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.937 ns/day, 12.391 hours/ns, 22.417 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1331       | 1381.8     | 1428.7     |  79.1 | 62.57
+Neigh   | 703.58     | 705.98     | 708.36     |   4.1 | 31.97
+Comm    | 50.943     | 95.047     | 149.61     | 336.9 |  4.30
+Output  | 0.15847    | 0.15856    | 0.15986    |   0.1 |  0.01
+Modify  | 15.547     | 19.661     | 29.601     | 129.9 |  0.89
+Other   |            | 5.684      |            |       |  0.26
+
+Nlocal:    1228.25 ave 1237 max 1216 min
+Histogram: 1 0 3 2 0 2 2 1 2 3
+Nghost:    4806.88 ave 4834 max 4774 min
+Histogram: 2 0 1 1 3 1 3 2 1 2
+Neighs:    122524 ave 126280 max 117751 min
+Histogram: 2 1 2 3 0 0 0 0 5 3
+
+Total # of neighbors = 1960382
+Ave neighs/atom = 99.7548
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 490000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  490000    1983.3002    219.58575   -63818.324   -68856.087   -63762.046    410620.82 
+  490495     1959.155   -146.35191   -63965.024   -68941.456    -64002.46    409822.92 
+Loop time of 21.5206 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.987 ns/day, 12.077 hours/ns, 23.001 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.098     | 13.516     | 14.046     |   7.9 | 62.81
+Neigh   | 6.8052     | 6.8757     | 6.9613     |   1.6 | 31.95
+Comm    | 0.4563     | 0.8921     | 1.3468     |  33.8 |  4.15
+Output  | 8.7023e-05 | 0.00010891 | 0.00037408 |   0.0 |  0.00
+Modify  | 0.15131    | 0.17965    | 0.25699    |  10.5 |  0.83
+Other   |            | 0.05695    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1248 max 1209 min
+Histogram: 1 0 1 3 3 3 3 1 0 1
+Nghost:    4808.38 ave 4826 max 4776 min
+Histogram: 1 0 1 1 0 3 3 1 3 3
+Neighs:    122734 ave 127539 max 116864 min
+Histogram: 1 3 2 2 0 0 1 0 4 3
+
+Total # of neighbors = 1963751
+Ave neighs/atom = 99.9263
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 490495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  490495     1959.155   -146.35191   -63965.024   -68941.456    -64002.46    409822.92 
+  500000     1952.251    -23.45527   -64041.446   -69000.342   -64047.434    409000.74 
+  540000    1965.4128    1226.3358   -64052.629   -69044.957   -63740.308    408040.45 
+Loop time of 2308.51 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.853 ns/day, 12.953 hours/ns, 21.445 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1357       | 1417       | 1488       | 113.8 | 61.38
+Neigh   | 704.28     | 706.31     | 708.14     |   4.3 | 30.60
+Comm    | 67.461     | 156.47     | 223.88     | 387.3 |  6.78
+Output  | 0.13959    | 0.13968    | 0.1402     |   0.0 |  0.01
+Modify  | 15.131     | 22.878     | 42.617     | 238.7 |  0.99
+Other   |            | 5.678      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1243 max 1210 min
+Histogram: 1 1 0 1 2 5 2 1 0 3
+Nghost:    4817.12 ave 4845 max 4795 min
+Histogram: 1 2 3 3 1 0 1 4 0 1
+Neighs:    123298 ave 127220 max 119591 min
+Histogram: 3 2 2 1 0 0 2 2 1 3
+
+Total # of neighbors = 1972764
+Ave neighs/atom = 100.385
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 540000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  540000    1965.4128    1226.3358   -64052.629   -69044.957   -63740.308    408040.45 
+  540495     1908.249    1443.9247   -64249.357   -69096.483   -63882.315    407268.52 
+Loop time of 26.9121 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.589 ns/day, 15.102 hours/ns, 18.393 timesteps/s
+99.5% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 14.544     | 15.646     | 19.306     |  35.8 | 58.14
+Neigh   | 6.8421     | 6.9116     | 7.026      |   1.6 | 25.68
+Comm    | 0.46787    | 4.093      | 5.2643     |  71.2 | 15.21
+Output  | 9.5844e-05 | 0.00015262 | 0.00040102 |   0.0 |  0.00
+Modify  | 0.14722    | 0.20402    | 0.35997    |  19.8 |  0.76
+Other   |            | 0.05712    |            |       |  0.21
+
+Nlocal:    1228.25 ave 1241 max 1207 min
+Histogram: 1 1 0 0 2 2 4 2 1 3
+Nghost:    4822.62 ave 4857 max 4792 min
+Histogram: 2 1 1 3 2 1 2 2 0 2
+Neighs:    123489 ave 127540 max 119829 min
+Histogram: 4 1 1 2 1 0 1 1 2 3
+
+Total # of neighbors = 1975817
+Ave neighs/atom = 100.54
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 540495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  540495     1908.249    1443.9247   -64249.357   -69096.483   -63882.315    407268.52 
+  550000    1892.9023   -767.51128   -64327.666    -69135.81   -64523.088    407944.08 
+  590000    1895.1672    516.39641   -64386.708   -69200.605   -64255.642    406644.66 
+Loop time of 2326.13 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.839 ns/day, 13.052 hours/ns, 21.282 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1369.1     | 1428.3     | 1521       | 116.2 | 61.40
+Neigh   | 704.77     | 706.25     | 708.2      |   3.7 | 30.36
+Comm    | 60.317     | 163.31     | 228.06     | 380.4 |  7.02
+Output  | 0.12833    | 0.12841    | 0.12957    |   0.1 |  0.01
+Modify  | 15.297     | 22.502     | 31.455     | 148.3 |  0.97
+Other   |            | 5.686      |            |       |  0.24
+
+Nlocal:    1228.25 ave 1244 max 1209 min
+Histogram: 1 0 1 3 1 2 3 3 1 1
+Nghost:    4825 ave 4859 max 4802 min
+Histogram: 4 1 0 4 1 2 2 1 0 1
+Neighs:    123680 ave 128203 max 118546 min
+Histogram: 1 1 4 1 1 0 0 4 3 1
+
+Total # of neighbors = 1978888
+Ave neighs/atom = 100.697
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 590000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  590000    1895.1672    516.39641   -64386.708   -69200.605   -64255.642    406644.66 
+  590495    1872.8607   -148.98062   -64484.329   -69241.566   -64522.145    406681.15 
+Loop time of 21.7169 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.969 ns/day, 12.187 hours/ns, 22.793 timesteps/s
+99.7% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.073     | 13.57      | 14.162     |   9.4 | 62.49
+Neigh   | 6.8293     | 6.8724     | 6.9223     |   1.0 | 31.65
+Comm    | 0.44512    | 1.0398     | 1.5556     |  35.9 |  4.79
+Output  | 0.00011516 | 0.00014068 | 0.00042892 |   0.0 |  0.00
+Modify  | 0.15172    | 0.17714    | 0.23642    |   8.1 |  0.82
+Other   |            | 0.05716    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1243 max 1215 min
+Histogram: 3 2 1 0 2 2 1 2 1 2
+Nghost:    4826.62 ave 4850 max 4803 min
+Histogram: 1 1 1 3 3 2 0 3 0 2
+Neighs:    123643 ave 128647 max 119521 min
+Histogram: 5 0 1 2 0 1 2 3 1 1
+
+Total # of neighbors = 1978292
+Ave neighs/atom = 100.666
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 590495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  590495    1872.8607   -148.98062   -64484.329   -69241.566   -64522.145    406681.15 
+  600000    1846.1697   -958.06471   -64639.961     -69329.4   -64882.827    406146.62 
+  640000    1853.7645   -254.75496   -64536.625   -69245.356   -64601.272    406569.73 
+Loop time of 2322.57 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.842 ns/day, 13.032 hours/ns, 21.315 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1384.5     | 1442.6     | 1487.8     |  92.9 | 62.11
+Neigh   | 703.66     | 708.09     | 725.3      |  25.0 | 30.49
+Comm    | 80.017     | 146.3      | 207.89     | 330.8 |  6.30
+Output  | 0.16646    | 0.1665     | 0.16697    |   0.0 |  0.01
+Modify  | 15.87      | 19.712     | 23.719     |  64.1 |  0.85
+Other   |            | 5.681      |            |       |  0.24
+
+Nlocal:    1228.25 ave 1248 max 1210 min
+Histogram: 1 0 3 2 4 2 1 1 1 1
+Nghost:    4846.25 ave 4860 max 4831 min
+Histogram: 3 0 1 1 3 2 1 1 1 3
+Neighs:    123738 ave 128415 max 118262 min
+Histogram: 1 2 4 0 1 0 1 1 2 4
+
+Total # of neighbors = 1979807
+Ave neighs/atom = 100.743
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 640000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  640000    1853.7645   -254.75496   -64536.625   -69245.356   -64601.272    406569.73 
+  640495    1815.3105   -5.6525845   -64804.579   -69415.633   -64806.007    404755.48 
+Loop time of 22.1787 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.928 ns/day, 12.446 hours/ns, 22.319 timesteps/s
+99.5% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.392     | 13.873     | 14.361     |   8.5 | 62.55
+Neigh   | 6.8216     | 6.8845     | 6.9242     |   1.0 | 31.04
+Comm    | 0.50935    | 1.1277     | 1.6688     |  36.4 |  5.08
+Output  | 0.00012207 | 0.00014998 | 0.00043702 |   0.0 |  0.00
+Modify  | 0.15263    | 0.23677    | 0.39989    |  20.5 |  1.07
+Other   |            | 0.05699    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1251 max 1208 min
+Histogram: 2 2 2 1 1 3 0 2 2 1
+Nghost:    4839.38 ave 4872 max 4799 min
+Histogram: 1 0 2 2 1 2 3 3 1 1
+Neighs:    124242 ave 129623 max 118959 min
+Histogram: 2 1 1 3 1 1 3 0 3 1
+
+Total # of neighbors = 1987876
+Ave neighs/atom = 101.154
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 640495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  640495    1815.3105   -5.6525845   -64804.579   -69415.633   -64806.007    404755.48 
+  650000    1797.3512    998.19532    -64860.43   -69425.865   -64608.781    403914.46 
+  690000    1821.8888    105.77699   -64860.069   -69487.833   -64833.408    403824.03 
+Loop time of 2221.47 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.925 ns/day, 12.465 hours/ns, 22.285 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1343.9     | 1395.1     | 1439.6     |  78.2 | 62.80
+Neigh   | 702.55     | 705.2      | 707.7      |   5.3 | 31.74
+Comm    | 48.981     | 96.512     | 148.88     | 318.6 |  4.34
+Output  | 0.14054    | 0.14069    | 0.14175    |   0.1 |  0.01
+Modify  | 15.65      | 18.824     | 22.21      |  64.9 |  0.85
+Other   |            | 5.648      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1245 max 1201 min
+Histogram: 1 1 0 1 1 2 2 4 3 1
+Nghost:    4850.69 ave 4887 max 4814 min
+Histogram: 1 3 0 1 2 4 0 3 1 1
+Neighs:    124527 ave 128904 max 120036 min
+Histogram: 2 3 1 1 0 3 0 0 3 3
+
+Total # of neighbors = 1992433
+Ave neighs/atom = 101.386
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 690000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  690000    1821.8888    105.77699   -64860.069   -69487.833   -64833.408    403824.03 
+  690495    1767.1527    968.24399   -65080.188   -69568.917   -64836.987    402431.41 
+Loop time of 22.0373 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.941 ns/day, 12.367 hours/ns, 22.462 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.302     | 13.776     | 14.455     |   9.6 | 62.51
+Neigh   | 6.8139     | 6.88       | 6.9762     |   1.7 | 31.22
+Comm    | 0.4443     | 1.1401     | 1.6737     |  36.4 |  5.17
+Output  | 0.00011492 | 0.00013718 | 0.00040817 |   0.0 |  0.00
+Modify  | 0.14982    | 0.18404    | 0.26834    |  11.3 |  0.84
+Other   |            | 0.05652    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1248 max 1217 min
+Histogram: 2 4 1 3 3 1 0 0 1 1
+Nghost:    4858.25 ave 4878 max 4834 min
+Histogram: 2 0 1 2 0 4 3 1 1 2
+Neighs:    124945 ave 130075 max 120231 min
+Histogram: 3 3 1 0 0 1 2 3 2 1
+
+Total # of neighbors = 1999123
+Ave neighs/atom = 101.726
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 690495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  690495    1767.1527    968.24399   -65080.188   -69568.917   -64836.987    402431.41 
+  700000    1743.9861    189.28273   -65180.757   -69610.641   -65133.204    402514.08 
+  740000    1758.8687   -329.65548   -65137.186   -69604.873   -65220.083    402890.32 
+Loop time of 2250.62 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.900 ns/day, 12.628 hours/ns, 21.996 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1352.2     | 1407.3     | 1459.4     |  91.3 | 62.53
+Neigh   | 702.41     | 705.06     | 707.16     |   4.9 | 31.33
+Comm    | 57.42      | 112.92     | 170.2      | 348.9 |  5.02
+Output  | 0.13701    | 0.13705    | 0.13754    |   0.0 |  0.01
+Modify  | 15.235     | 19.556     | 28.808     | 123.2 |  0.87
+Other   |            | 5.652      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1247 max 1219 min
+Histogram: 2 4 3 3 0 1 1 1 0 1
+Nghost:    4853.38 ave 4890 max 4819 min
+Histogram: 1 0 1 3 5 3 1 1 0 1
+Neighs:    124848 ave 130662 max 120450 min
+Histogram: 6 0 1 1 0 0 2 5 0 1
+
+Total # of neighbors = 1997576
+Ave neighs/atom = 101.647
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 740000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  740000    1758.8687   -329.65548   -65137.186   -69604.873   -65220.083    402890.32 
+  740495    1716.5405   -211.93017   -65377.911   -69738.081   -65430.999    401338.96 
+Loop time of 21.7306 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.968 ns/day, 12.194 hours/ns, 22.779 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.252     | 13.704     | 14.121     |   8.3 | 63.06
+Neigh   | 6.7817     | 6.8802     | 6.9755     |   1.8 | 31.66
+Comm    | 0.46824    | 0.91834    | 1.3731     |  33.8 |  4.23
+Output  | 8.7976e-05 | 0.000112   | 0.00040603 |   0.0 |  0.00
+Modify  | 0.15215    | 0.17128    | 0.20032    |   4.7 |  0.79
+Other   |            | 0.05689    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1242 max 1212 min
+Histogram: 2 0 2 1 2 1 1 2 4 1
+Nghost:    4862.75 ave 4880 max 4851 min
+Histogram: 3 0 1 7 0 1 1 1 1 1
+Neighs:    125328 ave 129568 max 120963 min
+Histogram: 2 2 3 1 0 0 2 0 3 3
+
+Total # of neighbors = 2005255
+Ave neighs/atom = 102.038
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 740495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  740495    1716.5405   -211.93017   -65377.911   -69738.081   -65430.999    401338.96 
+  750000     1709.661    515.07705   -65363.763   -69706.458   -65234.764    401259.27 
+  790000    1695.7058   -483.37764   -65379.074   -69686.321   -65500.251     401645.1 
+Loop time of 2267.58 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.886 ns/day, 12.724 hours/ns, 21.832 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1365.3     | 1418       | 1468.9     |  80.2 | 62.53
+Neigh   | 702.82     | 705.22     | 709.26     |   6.2 | 31.10
+Comm    | 64.862     | 117.1      | 175.16     | 318.3 |  5.16
+Output  | 0.15419    | 0.15445    | 0.15594    |   0.1 |  0.01
+Modify  | 15.725     | 21.45      | 37.772     | 203.3 |  0.95
+Other   |            | 5.67       |            |       |  0.25
+
+Nlocal:    1228.25 ave 1237 max 1217 min
+Histogram: 2 1 1 1 2 1 1 1 3 3
+Nghost:    4853.44 ave 4875 max 4822 min
+Histogram: 1 1 0 2 2 1 4 1 1 3
+Neighs:    125169 ave 129353 max 120947 min
+Histogram: 1 5 0 2 0 0 1 1 4 2
+
+Total # of neighbors = 2002707
+Ave neighs/atom = 101.909
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 790000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  790000    1695.7058   -483.37764   -65379.074   -69686.321   -65500.251     401645.1 
+  790495    1670.5623   -879.77496    -65632.86    -69876.24   -65852.589    400153.87 
+Loop time of 21.7212 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.969 ns/day, 12.189 hours/ns, 22.789 timesteps/s
+99.5% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.258     | 13.733     | 14.201     |   7.3 | 63.22
+Neigh   | 6.7658     | 6.8711     | 6.957      |   2.0 | 31.63
+Comm    | 0.46151    | 0.85022    | 1.3096     |  31.8 |  3.91
+Output  | 0.00011086 | 0.00013246 | 0.00041795 |   0.0 |  0.00
+Modify  | 0.14726    | 0.21021    | 0.38756    |  22.3 |  0.97
+Other   |            | 0.05656    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1244 max 1205 min
+Histogram: 1 1 0 0 3 2 3 3 2 1
+Nghost:    4867.06 ave 4888 max 4847 min
+Histogram: 1 1 2 3 2 1 3 1 0 2
+Neighs:    125680 ave 129755 max 120391 min
+Histogram: 1 1 4 1 1 1 0 1 1 5
+
+Total # of neighbors = 2010872
+Ave neighs/atom = 102.324
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 790495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  790495    1670.5623   -879.77496    -65632.86    -69876.24   -65852.589    400153.87 
+  800000    1635.2426   -650.75481   -65749.421   -69903.086   -65911.711    399563.66 
+  840000    1647.6835   -608.07764   -65711.718   -69896.984   -65863.471    399841.51 
+Loop time of 2251.54 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.900 ns/day, 12.634 hours/ns, 21.987 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1364.7     | 1407.6     | 1480       |  83.8 | 62.52
+Neigh   | 702.43     | 704.32     | 708.24     |   5.1 | 31.28
+Comm    | 46.343     | 110.1      | 161.06     | 355.9 |  4.89
+Output  | 0.13097    | 0.13101    | 0.13155    |   0.0 |  0.01
+Modify  | 14.867     | 23.738     | 48.764     | 296.2 |  1.05
+Other   |            | 5.648      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1240 max 1219 min
+Histogram: 3 1 3 0 2 1 2 1 2 1
+Nghost:    4865.31 ave 4895 max 4832 min
+Histogram: 1 2 1 1 0 5 1 3 1 1
+Neighs:    125785 ave 130775 max 121702 min
+Histogram: 5 3 0 0 0 0 1 3 2 2
+
+Total # of neighbors = 2012553
+Ave neighs/atom = 102.41
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 840000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  840000    1647.6835   -608.07764   -65711.718   -69896.984   -65863.471    399841.51 
+  840495    1622.3761   -479.40462   -65914.629   -70035.612   -66033.839    398403.56 
+Loop time of 21.9329 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.950 ns/day, 12.308 hours/ns, 22.569 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.365     | 13.804     | 14.335     |   8.0 | 62.94
+Neigh   | 6.8238     | 6.8733     | 6.9391     |   1.2 | 31.34
+Comm    | 0.48638    | 0.9983     | 1.4523     |  32.1 |  4.55
+Output  | 0.00012684 | 0.00015271 | 0.00041699 |   0.0 |  0.00
+Modify  | 0.15289    | 0.19997    | 0.30931    |  14.3 |  0.91
+Other   |            | 0.05685    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1244 max 1216 min
+Histogram: 1 0 5 1 4 2 1 0 1 1
+Nghost:    4876.44 ave 4910 max 4846 min
+Histogram: 2 0 2 2 2 3 3 0 1 1
+Neighs:    126275 ave 131102 max 122089 min
+Histogram: 4 2 1 1 0 0 1 4 1 2
+
+Total # of neighbors = 2020399
+Ave neighs/atom = 102.809
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 840495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  840495    1622.3761   -479.40462   -65914.629   -70035.612   -66033.839    398403.56 
+  850000    1596.6629   -458.37247   -65975.843   -70031.512   -66089.772    398221.84 
+  890000    1574.3253   -834.55798    -66085.29   -70084.219   -66292.497    397793.89 
+Loop time of 2237.54 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.912 ns/day, 12.555 hours/ns, 22.125 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1354.4     | 1409.1     | 1460       |  82.8 | 62.97
+Neigh   | 700.77     | 703.94     | 706.8      |   5.4 | 31.46
+Comm    | 51.963     | 97.047     | 154.98     | 356.9 |  4.34
+Output  | 0.1361     | 0.1363     | 0.13821    |   0.1 |  0.01
+Modify  | 15.19      | 21.682     | 39.9       | 225.6 |  0.97
+Other   |            | 5.655      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1247 max 1213 min
+Histogram: 2 1 1 4 0 5 0 2 0 1
+Nghost:    4894 ave 4914 max 4877 min
+Histogram: 1 3 2 1 2 2 1 2 1 1
+Neighs:    126450 ave 131419 max 121166 min
+Histogram: 2 2 3 0 1 1 0 2 2 3
+
+Total # of neighbors = 2023199
+Ave neighs/atom = 102.951
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 890000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  890000    1574.3253   -834.55798    -66085.29   -70084.219   -66292.497    397793.89 
+  890495    1564.3282   -1124.0963   -66180.067   -70153.603   -66458.952    397495.77 
+Loop time of 21.8412 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.958 ns/day, 12.257 hours/ns, 22.664 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.255     | 13.804     | 14.282     |   8.6 | 63.20
+Neigh   | 6.8227     | 6.8723     | 6.95       |   1.4 | 31.46
+Comm    | 0.47651    | 0.90233    | 1.5202     |  37.6 |  4.13
+Output  | 0.00010896 | 0.0001307  | 0.00037813 |   0.0 |  0.00
+Modify  | 0.14886    | 0.20658    | 0.36936    |  20.7 |  0.95
+Other   |            | 0.0558     |            |       |  0.26
+
+Nlocal:    1228.25 ave 1247 max 1208 min
+Histogram: 1 0 1 4 1 4 1 2 1 1
+Nghost:    4883.25 ave 4912 max 4857 min
+Histogram: 1 1 2 1 6 1 1 1 0 2
+Neighs:    126521 ave 131308 max 120995 min
+Histogram: 1 2 3 1 0 1 0 3 3 2
+
+Total # of neighbors = 2024336
+Ave neighs/atom = 103.009
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 890495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  890495    1564.3282   -1124.0963   -66180.067   -70153.603   -66458.952    397495.77 
+  900000    1563.0996    167.97951   -66255.074    -70225.49   -66213.573    395839.66 
+  940000     1566.248    168.79568   -66267.604   -70246.017   -66225.926    395602.53 
+Loop time of 2239.65 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.910 ns/day, 12.567 hours/ns, 22.104 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1369.1     | 1412.3     | 1463       |  83.6 | 63.06
+Neigh   | 701.54     | 703.69     | 706.29     |   5.1 | 31.42
+Comm    | 51.104     | 98.326     | 142.82     | 341.3 |  4.39
+Output  | 0.14446    | 0.1445     | 0.14505    |   0.0 |  0.01
+Modify  | 15.618     | 19.497     | 29.72      | 133.2 |  0.87
+Other   |            | 5.658      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1249 max 1208 min
+Histogram: 2 1 2 1 1 3 2 0 3 1
+Nghost:    4896.44 ave 4926 max 4870 min
+Histogram: 4 0 1 0 1 6 1 0 1 2
+Neighs:    127186 ave 133020 max 122189 min
+Histogram: 3 2 3 0 0 3 0 1 2 2
+
+Total # of neighbors = 2034974
+Ave neighs/atom = 103.55
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 940000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  940000     1566.248    168.79568   -66267.604   -70246.017   -66225.926    395602.53 
+  940495    1515.7267    233.48711   -66474.012   -70324.095    -66416.48    394780.97 
+Loop time of 21.9265 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.951 ns/day, 12.304 hours/ns, 22.575 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.464     | 13.855     | 14.337     |   8.4 | 63.19
+Neigh   | 6.8022     | 6.8718     | 6.9139     |   1.2 | 31.34
+Comm    | 0.46142    | 0.96117    | 1.4232     |  33.4 |  4.38
+Output  | 0.00011396 | 0.00013816 | 0.00040793 |   0.0 |  0.00
+Modify  | 0.15051    | 0.18189    | 0.25777    |  10.2 |  0.83
+Other   |            | 0.05672    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1244 max 1204 min
+Histogram: 1 0 0 2 0 3 6 1 1 2
+Nghost:    4895.19 ave 4912 max 4870 min
+Histogram: 1 2 0 1 0 3 3 1 2 3
+Neighs:    127402 ave 132596 max 121472 min
+Histogram: 1 4 3 0 0 0 0 2 2 4
+
+Total # of neighbors = 2038435
+Ave neighs/atom = 103.727
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 940495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  940495    1515.7267    233.48711   -66474.012   -70324.095    -66416.48    394780.97 
+  950000    1500.4304   -918.50481    -66570.63    -70381.86   -66796.957    394789.48 
+  990000    1503.3255   -174.81883   -66610.751   -70429.335   -66653.737    393952.27 
+Loop time of 2245.7 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.905 ns/day, 12.601 hours/ns, 22.044 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1378       | 1416.2     | 1469       |  86.6 | 63.06
+Neigh   | 701.69     | 703.15     | 704.71     |   3.6 | 31.31
+Comm    | 48.389     | 100.9      | 142.81     | 349.4 |  4.49
+Output  | 0.15929    | 0.15945    | 0.1607     |   0.1 |  0.01
+Modify  | 15.607     | 19.606     | 29.702     | 131.1 |  0.87
+Other   |            | 5.675      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1241 max 1214 min
+Histogram: 1 2 2 0 5 0 0 1 1 4
+Nghost:    4904.75 ave 4924 max 4879 min
+Histogram: 1 2 1 2 0 1 2 2 1 4
+Neighs:    127665 ave 132240 max 123417 min
+Histogram: 3 2 2 1 0 0 2 3 0 3
+
+Total # of neighbors = 2042639
+Ave neighs/atom = 103.941
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 990000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  990000    1503.3255   -174.81883   -66610.751   -70429.335   -66653.737    393952.27 
+  990495    1464.3061    799.98277   -66753.221   -70472.692   -66556.977    393030.53 
+Loop time of 21.9376 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.950 ns/day, 12.311 hours/ns, 22.564 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.512     | 13.884     | 14.364     |   8.4 | 63.29
+Neigh   | 6.8078     | 6.8716     | 6.9474     |   1.4 | 31.32
+Comm    | 0.4661     | 0.94555    | 1.3581     |  34.0 |  4.31
+Output  | 0.00011897 | 0.00014165 | 0.00039601 |   0.0 |  0.00
+Modify  | 0.15594    | 0.17954    | 0.24321    |   8.6 |  0.82
+Other   |            | 0.05666    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1241 max 1204 min
+Histogram: 1 0 0 0 2 3 3 2 3 2
+Nghost:    4931.56 ave 4965 max 4901 min
+Histogram: 1 0 1 2 5 4 0 2 0 1
+Neighs:    127995 ave 132725 max 122040 min
+Histogram: 1 1 4 1 1 0 0 2 5 1
+
+Total # of neighbors = 2047917
+Ave neighs/atom = 104.209
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 990495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+  990495    1464.3061    799.98277   -66753.221   -70472.692   -66556.977    393030.53 
+ 1000000    1442.2652   -142.73006   -66903.739   -70567.224   -66938.692    392352.27 
+ 1040000    1443.0304    585.83888   -66888.505   -70553.934   -66745.101    392185.89 
+Loop time of 2261.1 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.892 ns/day, 12.687 hours/ns, 21.894 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1378.8     | 1421.9     | 1490.4     |  90.9 | 62.89
+Neigh   | 700.96     | 702.78     | 705.3      |   5.0 | 31.08
+Comm    | 47.746     | 108.16     | 155.54     | 378.3 |  4.78
+Output  | 0.12828    | 0.12843    | 0.12905    |   0.1 |  0.01
+Modify  | 15.011     | 22.45      | 43.401     | 254.8 |  0.99
+Other   |            | 5.657      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1241 max 1214 min
+Histogram: 1 0 2 1 5 2 0 2 1 2
+Nghost:    4935.31 ave 4955 max 4913 min
+Histogram: 1 1 1 1 3 2 4 0 1 2
+Neighs:    128283 ave 132785 max 121855 min
+Histogram: 1 0 3 2 1 1 0 1 4 3
+
+Total # of neighbors = 2052521
+Ave neighs/atom = 104.443
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1040000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1040000    1443.0304    585.83888   -66888.505   -70553.934   -66745.101    392185.89 
+ 1040495    1413.8157    707.58237   -67046.329   -70637.549   -66873.518    391295.32 
+Loop time of 21.9656 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.947 ns/day, 12.326 hours/ns, 22.535 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.536     | 13.926     | 14.471     |   7.5 | 63.40
+Neigh   | 6.8148     | 6.8707     | 6.9369     |   1.3 | 31.28
+Comm    | 0.44792    | 0.92629    | 1.4013     |  31.6 |  4.22
+Output  | 0.00010514 | 0.00014099 | 0.00040913 |   0.0 |  0.00
+Modify  | 0.1481     | 0.18551    | 0.28506    |  13.4 |  0.84
+Other   |            | 0.05686    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1247 max 1213 min
+Histogram: 2 1 4 0 3 1 2 1 0 2
+Nghost:    4913.12 ave 4944 max 4890 min
+Histogram: 2 1 1 3 2 4 1 1 0 1
+Neighs:    128565 ave 134282 max 123784 min
+Histogram: 3 1 3 0 1 1 4 1 0 2
+
+Total # of neighbors = 2057043
+Ave neighs/atom = 104.673
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1040495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1040495    1413.8157    707.58237   -67046.329   -70637.549   -66873.518    391295.32 
+ 1050000     1386.907    130.14976   -67167.049   -70689.919   -67135.284    391038.72 
+ 1090000    1397.0576   -435.32368   -67153.051   -70701.704   -67259.366    391285.39 
+Loop time of 2285.85 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.871 ns/day, 12.826 hours/ns, 21.657 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1386.8     | 1435.6     | 1506.3     |  86.6 | 62.80
+Neigh   | 700.29     | 702.39     | 706.61     |   5.8 | 30.73
+Comm    | 56.057     | 118.82     | 173.35     | 355.6 |  5.20
+Output  | 0.13205    | 0.13215    | 0.1335     |   0.1 |  0.01
+Modify  | 15.306     | 23.224     | 45.219     | 263.5 |  1.02
+Other   |            | 5.657      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1250 max 1214 min
+Histogram: 1 0 3 5 3 3 0 0 0 1
+Nghost:    4920.38 ave 4940 max 4882 min
+Histogram: 1 0 1 2 1 1 0 4 1 5
+Neighs:    128580 ave 132214 max 123987 min
+Histogram: 1 4 2 0 1 0 0 1 3 4
+
+Total # of neighbors = 2057278
+Ave neighs/atom = 104.685
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1090000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1090000    1397.0576   -435.32368   -67153.051   -70701.704   -67259.366    391285.39 
+ 1090495    1364.2472   -190.46244   -67329.382   -70794.694   -67375.768    390202.23 
+Loop time of 22.0313 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.941 ns/day, 12.363 hours/ns, 22.468 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.527     | 13.954     | 14.532     |   9.1 | 63.34
+Neigh   | 6.8084     | 6.8633     | 6.9666     |   1.4 | 31.15
+Comm    | 0.45988    | 0.96029    | 1.429      |  37.4 |  4.36
+Output  | 0.0001049  | 0.00012794 | 0.00039101 |   0.0 |  0.00
+Modify  | 0.14816    | 0.19707    | 0.33479    |  17.9 |  0.89
+Other   |            | 0.05694    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1240 max 1210 min
+Histogram: 2 0 0 1 3 1 1 2 3 3
+Nghost:    4934.81 ave 4958 max 4913 min
+Histogram: 3 0 1 2 4 1 0 2 1 2
+Neighs:    128959 ave 133728 max 124132 min
+Histogram: 2 2 2 1 1 0 0 5 1 2
+
+Total # of neighbors = 2063349
+Ave neighs/atom = 104.994
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1090495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1090495    1364.2472   -190.46244   -67329.382   -70794.694   -67375.768    390202.23 
+ 1100000    1351.1313   -267.35811    -67457.09   -70889.087   -67522.061    389349.93 
+ 1140000    1355.6642    265.85014   -67428.407   -70871.917   -67363.814     389276.5 
+Loop time of 2277.49 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.878 ns/day, 12.779 hours/ns, 21.737 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1395.5     | 1440.9     | 1483.3     |  93.4 | 63.27
+Neigh   | 699.12     | 702.56     | 709.13     |   9.0 | 30.85
+Comm    | 65.877     | 108.97     | 156.08     | 359.9 |  4.78
+Output  | 0.15387    | 0.15409    | 0.15469    |   0.1 |  0.01
+Modify  | 15.329     | 19.247     | 26.326     |  97.7 |  0.85
+Other   |            | 5.68       |            |       |  0.25
+
+Nlocal:    1228.25 ave 1248 max 1211 min
+Histogram: 2 2 4 0 0 1 3 1 2 1
+Nghost:    4952.88 ave 5005 max 4915 min
+Histogram: 1 2 2 4 2 2 0 1 0 2
+Neighs:    129241 ave 134655 max 124521 min
+Histogram: 3 1 2 1 1 1 4 1 0 2
+
+Total # of neighbors = 2067849
+Ave neighs/atom = 105.223
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1140000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1140000    1355.6642    265.85014   -67428.407   -70871.917   -67363.814     389276.5 
+ 1140495    1313.8951   -100.40854   -67636.703   -70974.116   -67661.042    388368.64 
+Loop time of 22.4843 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.902 ns/day, 12.617 hours/ns, 22.015 timesteps/s
+99.5% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.743     | 14.203     | 14.796     |   9.3 | 63.17
+Neigh   | 6.7983     | 6.8752     | 6.96       |   1.7 | 30.58
+Comm    | 0.44852    | 1.167      | 1.6121     |  33.9 |  5.19
+Output  | 0.00010991 | 0.00013064 | 0.00037885 |   0.0 |  0.00
+Modify  | 0.15147    | 0.18232    | 0.22167    |   7.0 |  0.81
+Other   |            | 0.05693    |            |       |  0.25
+
+Nlocal:    1228.25 ave 1248 max 1208 min
+Histogram: 2 0 0 1 2 7 2 1 0 1
+Nghost:    4943.56 ave 4968 max 4923 min
+Histogram: 3 0 1 1 4 2 1 3 0 1
+Neighs:    129560 ave 133417 max 124014 min
+Histogram: 2 1 2 2 0 1 0 0 2 6
+
+Total # of neighbors = 2072959
+Ave neighs/atom = 105.483
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1140495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1140495    1313.8951   -100.40854   -67636.703   -70974.116   -67661.042    388368.64 
+ 1150000    1294.7469   -947.34929   -67687.314   -70976.089    -67917.17    388737.84 
+ 1190000    1313.1318    574.84269   -67709.666    -71045.14   -67570.787    387077.48 
+Loop time of 2336.56 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.831 ns/day, 13.111 hours/ns, 21.187 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1423.1     | 1471.4     | 1521.3     |  98.3 | 62.97
+Neigh   | 698.17     | 703.33     | 720.86     |  23.1 | 30.10
+Comm    | 68.831     | 136.81     | 189.26     | 349.8 |  5.86
+Output  | 0.15499    | 0.15508    | 0.15639    |   0.1 |  0.01
+Modify  | 15.843     | 19.208     | 23.478     |  73.4 |  0.82
+Other   |            | 5.68       |            |       |  0.24
+
+Nlocal:    1228.25 ave 1248 max 1206 min
+Histogram: 1 2 0 2 0 6 1 1 1 2
+Nghost:    4961.12 ave 5006 max 4941 min
+Histogram: 3 1 6 1 3 1 0 0 0 1
+Neighs:    129990 ave 134247 max 124157 min
+Histogram: 2 1 2 1 1 1 0 1 3 4
+
+Total # of neighbors = 2079833
+Ave neighs/atom = 105.833
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1190000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1190000    1313.1318    574.84269   -67709.666    -71045.14   -67570.787    387077.48 
+ 1190495    1258.1859    380.16887    -67925.25   -71121.156    -67833.54    386498.35 
+Loop time of 22.0877 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.936 ns/day, 12.395 hours/ns, 22.411 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.644     | 14.061     | 14.528     |   8.8 | 63.66
+Neigh   | 6.811      | 6.8725     | 6.9182     |   1.3 | 31.11
+Comm    | 0.46877    | 0.92354    | 1.3262     |  34.7 |  4.18
+Output  | 9.799e-05  | 0.00012326 | 0.00042582 |   0.0 |  0.00
+Modify  | 0.15399    | 0.17405    | 0.22457    |   7.0 |  0.79
+Other   |            | 0.05646    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1242 max 1198 min
+Histogram: 1 0 0 0 2 1 4 2 4 2
+Nghost:    4960.94 ave 5003 max 4929 min
+Histogram: 3 1 3 0 2 3 1 1 1 1
+Neighs:    130200 ave 134104 max 123675 min
+Histogram: 1 0 1 2 4 0 0 1 3 4
+
+Total # of neighbors = 2083202
+Ave neighs/atom = 106.005
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1190495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1190495    1258.1859    380.16887    -67925.25   -71121.156    -67833.54    386498.35 
+ 1200000    1251.1319   -151.96914   -68016.764   -71194.753   -68053.385    386084.25 
+ 1240000    1248.7709    522.46967   -68028.652   -71200.644   -67902.875    385703.06 
+Loop time of 2315.05 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.848 ns/day, 12.990 hours/ns, 21.384 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1413.5     | 1457.5     | 1528.7     |  89.4 | 62.96
+Neigh   | 698.61     | 701.15     | 706.54     |   6.7 | 30.29
+Comm    | 60.412     | 130.73     | 178.18     | 320.8 |  5.65
+Output  | 0.12897    | 0.12907    | 0.12955    |   0.0 |  0.01
+Modify  | 15.619     | 19.864     | 27.074     | 103.2 |  0.86
+Other   |            | 5.679      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1246 max 1214 min
+Histogram: 1 2 1 4 2 3 0 1 1 1
+Nghost:    4968.94 ave 4993 max 4946 min
+Histogram: 1 3 0 3 2 2 0 2 0 3
+Neighs:    130420 ave 134888 max 125504 min
+Histogram: 3 1 2 1 1 0 0 2 4 2
+
+Total # of neighbors = 2086723
+Ave neighs/atom = 106.184
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1240000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1240000    1248.7709    522.46967   -68028.652   -71200.644   -67902.875    385703.06 
+ 1240495    1211.4539    177.04484   -68215.955   -71293.158   -68173.421    384913.48 
+Loop time of 22.0697 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.938 ns/day, 12.385 hours/ns, 22.429 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.732     | 14.069     | 14.545     |   7.1 | 63.75
+Neigh   | 6.7867     | 6.8639     | 6.93       |   1.6 | 31.10
+Comm    | 0.47017    | 0.89784    | 1.2748     |  29.0 |  4.07
+Output  | 0.00010705 | 0.00012858 | 0.00040507 |   0.0 |  0.00
+Modify  | 0.15285    | 0.18125    | 0.21239    |   6.0 |  0.82
+Other   |            | 0.05714    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1243 max 1212 min
+Histogram: 1 1 0 5 2 2 0 1 2 2
+Nghost:    4968.69 ave 4982 max 4951 min
+Histogram: 1 2 0 2 0 2 4 2 1 2
+Neighs:    130727 ave 135691 max 126751 min
+Histogram: 5 1 2 0 0 2 1 1 1 3
+
+Total # of neighbors = 2091634
+Ave neighs/atom = 106.434
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1240495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1240495    1211.4539    177.04484   -68215.955   -71293.158   -68173.421    384913.48 
+ 1250000    1192.7689   -1269.4383   -68369.986   -71399.727   -68674.676     384554.1 
+ 1290000    1203.7657   -856.24079   -68339.544   -71397.219   -68545.011    384463.79 
+Loop time of 2268.83 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.885 ns/day, 12.731 hours/ns, 21.820 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1383.9     | 1441.2     | 1501.8     |  88.0 | 63.52
+Neigh   | 696.2      | 700.11     | 703.14     |   6.7 | 30.86
+Comm    | 48.45      | 101.94     | 160.22     | 354.7 |  4.49
+Output  | 0.15306    | 0.15334    | 0.15463    |   0.1 |  0.01
+Modify  | 15.56      | 19.774     | 30.377     | 137.6 |  0.87
+Other   |            | 5.688      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1249 max 1208 min
+Histogram: 2 0 3 1 3 1 2 1 1 2
+Nghost:    4980.62 ave 5011 max 4942 min
+Histogram: 1 0 0 3 2 3 2 3 1 1
+Neighs:    130905 ave 136635 max 124992 min
+Histogram: 1 3 2 0 1 2 1 4 1 1
+
+Total # of neighbors = 2094479
+Ave neighs/atom = 106.578
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1290000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1290000    1203.7657   -856.24079   -68339.544   -71397.219   -68545.011    384463.79 
+ 1290495    1163.6458    413.39818   -68538.857   -71494.623    -68440.09    382783.75 
+Loop time of 22.1403 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.932 ns/day, 12.424 hours/ns, 22.357 timesteps/s
+99.7% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.614     | 14.128     | 14.622     |   8.2 | 63.81
+Neigh   | 6.7585     | 6.8589     | 6.9376     |   1.7 | 30.98
+Comm    | 0.46013    | 0.90975    | 1.4572     |  35.5 |  4.11
+Output  | 0.00011396 | 0.0001338  | 0.0003829  |   0.0 |  0.00
+Modify  | 0.15275    | 0.18625    | 0.28446    |  13.1 |  0.84
+Other   |            | 0.05682    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1244 max 1210 min
+Histogram: 2 1 0 0 2 2 5 3 0 1
+Nghost:    4979.38 ave 5006 max 4957 min
+Histogram: 1 3 2 1 4 1 0 1 0 3
+Neighs:    131501 ave 137126 max 125240 min
+Histogram: 1 1 3 3 0 1 0 4 2 1
+
+Total # of neighbors = 2104022
+Ave neighs/atom = 107.064
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1290495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1290495    1163.6458    413.39818   -68538.857   -71494.623    -68440.09    382783.75 
+ 1300000    1140.3592    445.65475    -68706.53   -71603.146   -68600.363    381680.91 
+ 1340000    1132.4411    110.99141   -68634.186    -71510.69   -68607.685    382550.83 
+Loop time of 2265.57 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.888 ns/day, 12.712 hours/ns, 21.851 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1388.4     | 1443.8     | 1489.6     |  86.7 | 63.73
+Neigh   | 696.69     | 699.57     | 701.56     |   6.1 | 30.88
+Comm    | 51.62      | 97.802     | 154.99     | 347.8 |  4.32
+Output  | 0.13761    | 0.13765    | 0.1382     |   0.0 |  0.01
+Modify  | 15.275     | 18.551     | 21.615     |  67.3 |  0.82
+Other   |            | 5.672      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1248 max 1205 min
+Histogram: 1 0 3 3 0 1 3 1 2 2
+Nghost:    4974.12 ave 5003 max 4950 min
+Histogram: 1 4 2 1 1 0 2 3 1 1
+Neighs:    131583 ave 137210 max 127309 min
+Histogram: 5 1 1 2 0 1 1 1 2 2
+
+Total # of neighbors = 2105332
+Ave neighs/atom = 107.131
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1340000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1340000    1132.4411    110.99141   -68634.186    -71510.69   -68607.685    382550.83 
+ 1340495    1105.2018    -484.9913   -68815.048   -71622.361   -68930.679    381988.54 
+Loop time of 22.2131 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.925 ns/day, 12.465 hours/ns, 22.284 timesteps/s
+99.7% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.761     | 14.166     | 14.708     |   8.1 | 63.78
+Neigh   | 6.8226     | 6.8643     | 6.9261     |   1.1 | 30.90
+Comm    | 0.44781    | 0.94266    | 1.3488     |  33.8 |  4.24
+Output  | 0.00010586 | 0.00012867 | 0.0003922  |   0.0 |  0.00
+Modify  | 0.1518     | 0.18284    | 0.26542    |  11.1 |  0.82
+Other   |            | 0.05673    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1239 max 1218 min
+Histogram: 2 1 0 2 1 5 3 1 0 1
+Nghost:    4983.75 ave 5014 max 4953 min
+Histogram: 3 1 1 1 1 1 2 3 1 2
+Neighs:    131765 ave 135190 max 127957 min
+Histogram: 2 4 1 1 0 0 0 1 3 4
+
+Total # of neighbors = 2108235
+Ave neighs/atom = 107.278
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1340495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1340495    1105.2018    -484.9913   -68815.048   -71622.361   -68930.679    381988.54 
+ 1350000    1096.0424     -278.871   -68953.931   -71737.978   -69020.172    380568.65 
+ 1390000    1092.8345    544.96096   -68954.037   -71729.936   -68824.672    380332.15 
+Loop time of 2371.28 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.804 ns/day, 13.306 hours/ns, 20.877 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1434.3     | 1485.9     | 1569.3     | 102.0 | 62.66
+Neigh   | 696.68     | 699.33     | 702.98     |   6.5 | 29.49
+Comm    | 74.788     | 160        | 215.91     | 335.5 |  6.75
+Output  | 0.16686    | 0.167      | 0.16824    |   0.1 |  0.01
+Modify  | 15.344     | 20.269     | 27.75      | 110.9 |  0.85
+Other   |            | 5.658      |            |       |  0.24
+
+Nlocal:    1228.25 ave 1246 max 1213 min
+Histogram: 3 2 0 1 2 2 2 3 0 1
+Nghost:    5000.44 ave 5016 max 4975 min
+Histogram: 1 1 1 1 2 1 2 1 2 4
+Neighs:    132358 ave 138479 max 127218 min
+Histogram: 3 3 1 1 0 1 1 2 3 1
+
+Total # of neighbors = 2117733
+Ave neighs/atom = 107.762
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1390000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1390000    1092.8345    544.96096   -68954.037   -71729.936   -68824.672    380332.15 
+ 1390495    1058.8896   -20.464269   -69142.881   -71832.557   -69147.728     379456.9 
+Loop time of 22.2779 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.920 ns/day, 12.502 hours/ns, 22.219 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.877     | 14.269     | 14.709     |   7.3 | 64.05
+Neigh   | 6.805      | 6.8627     | 6.9209     |   1.5 | 30.80
+Comm    | 0.47537    | 0.88727    | 1.3509     |  34.4 |  3.98
+Output  | 0.00011897 | 0.00013915 | 0.00041795 |   0.0 |  0.00
+Modify  | 0.15054    | 0.20191    | 0.35212    |  19.3 |  0.91
+Other   |            | 0.05702    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1240 max 1216 min
+Histogram: 2 1 2 1 1 1 2 4 1 1
+Nghost:    5004.31 ave 5047 max 4978 min
+Histogram: 4 1 1 1 4 3 1 0 0 1
+Neighs:    132654 ave 137417 max 127952 min
+Histogram: 3 2 2 1 0 0 2 2 1 3
+
+Total # of neighbors = 2122460
+Ave neighs/atom = 108.002
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1390495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1390495    1058.8896   -20.464269   -69142.881   -71832.557   -69147.728     379456.9 
+ 1400000    1052.7349    -276.0286   -69261.052   -71935.095   -69326.301    378725.71 
+ 1440000    1047.4916   -599.11356    -69279.59   -71940.314   -69421.212    378733.53 
+Loop time of 2281.79 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.875 ns/day, 12.803 hours/ns, 21.696 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1405.7     | 1455.7     | 1504.4     |  85.8 | 63.80
+Neigh   | 695.08     | 698.34     | 700.6      |   6.0 | 30.61
+Comm    | 51.009     | 102.69     | 154.36     | 340.3 |  4.50
+Output  | 0.13687    | 0.13691    | 0.13742    |   0.0 |  0.01
+Modify  | 15.319     | 19.251     | 28.012     | 116.0 |  0.84
+Other   |            | 5.672      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1243 max 1219 min
+Histogram: 6 2 0 1 1 1 1 1 1 2
+Nghost:    5011.56 ave 5038 max 4987 min
+Histogram: 3 2 2 0 1 1 2 1 1 3
+Neighs:    132879 ave 137543 max 128350 min
+Histogram: 3 3 1 1 0 0 1 3 1 3
+
+Total # of neighbors = 2126070
+Ave neighs/atom = 108.186
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1440000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1440000    1047.4916   -599.11356    -69279.59   -71940.314   -69421.212    378733.53 
+ 1440495    1015.3989   -6.1683702   -69457.503   -72036.708   -69458.956    377524.13 
+Loop time of 22.3148 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.917 ns/day, 12.522 hours/ns, 22.183 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.903     | 14.267     | 14.793     |   7.8 | 63.94
+Neigh   | 6.8062     | 6.8608     | 6.9134     |   1.2 | 30.75
+Comm    | 0.46573    | 0.9352     | 1.3669     |  33.1 |  4.19
+Output  | 0.00010705 | 0.00012739 | 0.00038195 |   0.0 |  0.00
+Modify  | 0.14923    | 0.19453    | 0.32176    |  16.6 |  0.87
+Other   |            | 0.05683    |            |       |  0.25
+
+Nlocal:    1228.25 ave 1238 max 1220 min
+Histogram: 3 2 2 1 1 1 1 2 1 2
+Nghost:    5016.06 ave 5037 max 5000 min
+Histogram: 5 0 0 2 2 3 1 0 1 2
+Neighs:    133324 ave 138280 max 128873 min
+Histogram: 4 2 2 0 0 0 0 5 1 2
+
+Total # of neighbors = 2133176
+Ave neighs/atom = 108.548
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1440495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1440495    1015.3989   -6.1683702   -69457.503   -72036.708   -69458.956    377524.13 
+ 1450000    997.79312    210.99996   -69595.364   -72129.849   -69545.787    376449.14 
+ 1490000    1000.9549    20.702884    -69583.19   -72125.707   -69578.323    376703.99 
+Loop time of 2271.89 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.883 ns/day, 12.748 hours/ns, 21.790 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1411.9     | 1455.9     | 1499.7     |  79.9 | 64.08
+Neigh   | 695.2      | 697.47     | 700.01     |   6.3 | 30.70
+Comm    | 49.241     | 94.182     | 139.09     | 326.0 |  4.15
+Output  | 0.14797    | 0.17067    | 0.51077    |  21.3 |  0.01
+Modify  | 15.415     | 18.154     | 21.296     |  59.1 |  0.80
+Other   |            | 6.032      |            |       |  0.27
+
+Nlocal:    1228.25 ave 1248 max 1213 min
+Histogram: 1 0 5 1 3 2 1 2 0 1
+Nghost:    5016.75 ave 5039 max 5000 min
+Histogram: 3 1 2 2 2 1 3 0 0 2
+Neighs:    133659 ave 138086 max 129662 min
+Histogram: 5 1 1 0 1 0 1 1 4 2
+
+Total # of neighbors = 2138546
+Ave neighs/atom = 108.821
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1490000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1490000    1000.9549    20.702884    -69583.19   -72125.707   -69578.323    376703.99 
+ 1490495    970.68083   -546.30254   -69777.665   -72243.283   -69905.794    375772.82 
+Loop time of 22.3011 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.918 ns/day, 12.515 hours/ns, 22.196 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.875     | 14.311     | 14.73      |   7.7 | 64.17
+Neigh   | 6.7818     | 6.8579     | 6.9851     |   1.7 | 30.75
+Comm    | 0.46731    | 0.90367    | 1.3455     |  30.9 |  4.05
+Output  | 0.0001049  | 0.00012757 | 0.00040698 |   0.0 |  0.00
+Modify  | 0.15215    | 0.1711     | 0.19791    |   4.2 |  0.77
+Other   |            | 0.05697    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1246 max 1209 min
+Histogram: 1 2 1 2 2 3 0 1 3 1
+Nghost:    5026.25 ave 5058 max 4988 min
+Histogram: 1 0 3 0 2 2 4 1 1 2
+Neighs:    134044 ave 139218 max 128421 min
+Histogram: 1 3 0 3 1 1 0 3 2 2
+
+Total # of neighbors = 2144698
+Ave neighs/atom = 109.134
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1490495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1490495    970.68083   -546.30254   -69777.665   -72243.283   -69905.794    375772.82 
+ 1500000    948.88133   -634.37884   -69904.104   -72314.349   -70052.606    375053.32 
+ 1540000    955.30265   -169.65386   -69886.813   -72313.369   -69926.505    374840.86 
+Loop time of 2274.17 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.881 ns/day, 12.761 hours/ns, 21.768 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1419.3     | 1460       | 1498.9     |  73.6 | 64.20
+Neigh   | 693.81     | 696.76     | 699.18     |   6.3 | 30.64
+Comm    | 54.315     | 92.825     | 136.17     | 313.2 |  4.08
+Output  | 0.14826    | 0.14838    | 0.14888    |   0.0 |  0.01
+Modify  | 15.325     | 18.754     | 25.037     |  87.5 |  0.82
+Other   |            | 5.682      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1246 max 1209 min
+Histogram: 2 1 0 1 2 4 3 1 1 1
+Nghost:    5030.75 ave 5062 max 5000 min
+Histogram: 1 0 3 0 4 3 3 0 1 1
+Neighs:    134401 ave 139966 max 128258 min
+Histogram: 2 2 2 2 0 0 0 1 5 2
+
+Total # of neighbors = 2150413
+Ave neighs/atom = 109.425
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1540000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1540000    955.30265   -169.65386   -69886.813   -72313.369   -69926.505    374840.86 
+ 1540495    922.20448    265.65223   -70097.309   -72439.793   -70035.392    373427.75 
+Loop time of 22.234 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.924 ns/day, 12.477 hours/ns, 22.263 timesteps/s
+99.7% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.978     | 14.316     | 14.713     |   6.5 | 64.39
+Neigh   | 6.7971     | 6.8475     | 6.8882     |   0.9 | 30.80
+Comm    | 0.45796    | 0.83954    | 1.1962     |  28.7 |  3.78
+Output  | 0.00011587 | 0.00013885 | 0.00042295 |   0.0 |  0.00
+Modify  | 0.153      | 0.17356    | 0.21278    |   5.7 |  0.78
+Other   |            | 0.05748    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1244 max 1216 min
+Histogram: 3 2 0 1 3 3 1 1 0 2
+Nghost:    5040.5 ave 5075 max 5014 min
+Histogram: 3 1 1 3 2 1 2 2 0 1
+Neighs:    134930 ave 139620 max 129221 min
+Histogram: 2 2 2 0 2 0 0 1 4 3
+
+Total # of neighbors = 2158873
+Ave neighs/atom = 109.855
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1540495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1540495    922.20448    265.65223   -70097.309   -72439.793   -70035.392    373427.75 
+ 1550000    897.49323    411.04302   -70267.979   -72547.694   -70172.476    372256.36 
+ 1590000    898.17846    681.95106   -70260.131   -72541.586   -70101.679    372265.94 
+Loop time of 2279.64 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.876 ns/day, 12.791 hours/ns, 21.716 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1421.4     | 1464.9     | 1508.4     |  74.3 | 64.26
+Neigh   | 693.91     | 696.03     | 698.02     |   5.5 | 30.53
+Comm    | 48.263     | 94.626     | 138.85     | 310.5 |  4.15
+Output  | 0.16062    | 0.16072    | 0.16202    |   0.1 |  0.01
+Modify  | 15.645     | 18.263     | 21.161     |  57.0 |  0.80
+Other   |            | 5.672      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1237 max 1219 min
+Histogram: 3 0 3 0 1 3 1 0 1 4
+Nghost:    5044.19 ave 5074 max 5014 min
+Histogram: 1 0 2 2 3 2 4 0 1 1
+Neighs:    135350 ave 139798 max 130456 min
+Histogram: 2 3 1 2 0 0 1 0 4 3
+
+Total # of neighbors = 2165605
+Ave neighs/atom = 110.198
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1590000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1590000    898.17846    681.95106   -70260.131   -72541.586   -70101.679    372265.94 
+ 1590495    868.11942   -914.86411   -70428.888   -72633.991   -70641.356    372089.69 
+Loop time of 22.4155 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.908 ns/day, 12.579 hours/ns, 22.083 timesteps/s
+99.7% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 13.947     | 14.43      | 14.792     |   6.9 | 64.38
+Neigh   | 6.7789     | 6.8557     | 6.9261     |   1.4 | 30.58
+Comm    | 0.48072    | 0.89475    | 1.3886     |  31.1 |  3.99
+Output  | 0.0001111  | 0.00013249 | 0.00040483 |   0.0 |  0.00
+Modify  | 0.15305    | 0.17709    | 0.23814    |   8.4 |  0.79
+Other   |            | 0.05734    |            |       |  0.26
+
+Nlocal:    1228.25 ave 1241 max 1218 min
+Histogram: 1 3 1 4 3 0 0 1 2 1
+Nghost:    5059.81 ave 5077 max 5035 min
+Histogram: 1 1 1 2 0 2 2 1 5 1
+Neighs:    135406 ave 139957 max 131206 min
+Histogram: 5 1 1 1 0 0 1 2 3 2
+
+Total # of neighbors = 2166497
+Ave neighs/atom = 110.243
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1590495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1590495    868.11942   -914.86411   -70428.888   -72633.991   -70641.356    372089.69 
+ 1600000    848.02431    57.664008   -70603.259   -72757.318   -70589.927    370416.15 
+ 1640000    855.11618     116.5977   -70584.456   -72756.529   -70557.507    370315.21 
+Loop time of 2289.83 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.868 ns/day, 12.848 hours/ns, 21.620 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1426.7     | 1472.6     | 1511.8     |  79.1 | 64.31
+Neigh   | 691.64     | 695.45     | 698.25     |   6.1 | 30.37
+Comm    | 57.292     | 97.125     | 145.11     | 330.7 |  4.24
+Output  | 0.12825    | 0.1283     | 0.12887    |   0.0 |  0.01
+Modify  | 15.519     | 18.844     | 23.395     |  73.7 |  0.82
+Other   |            | 5.69       |            |       |  0.25
+
+Nlocal:    1228.25 ave 1242 max 1204 min
+Histogram: 1 1 0 0 1 5 1 0 4 3
+Nghost:    5075.56 ave 5104 max 5053 min
+Histogram: 1 2 3 3 1 2 0 1 1 2
+Neighs:    136083 ave 141560 max 129960 min
+Histogram: 2 0 2 3 1 0 0 4 3 1
+
+Total # of neighbors = 2177322
+Ave neighs/atom = 110.794
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1640000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1640000    855.11618     116.5977   -70584.456   -72756.529   -70557.507    370315.21 
+ 1640495    817.56857   -271.91643   -70762.172    -72838.87   -70824.922    369734.87 
+Loop time of 22.51 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.900 ns/day, 12.632 hours/ns, 21.990 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 14.044     | 14.5       | 14.949     |   7.4 | 64.42
+Neigh   | 6.7708     | 6.8567     | 6.9467     |   1.6 | 30.46
+Comm    | 0.46683    | 0.92286    | 1.3945     |  30.7 |  4.10
+Output  | 8.4877e-05 | 0.00010766 | 0.00037193 |   0.0 |  0.00
+Modify  | 0.1545     | 0.17332    | 0.19294    |   3.6 |  0.77
+Other   |            | 0.05667    |            |       |  0.25
+
+Nlocal:    1228.25 ave 1239 max 1214 min
+Histogram: 1 1 1 1 3 1 2 1 3 2
+Nghost:    5070.5 ave 5088 max 5047 min
+Histogram: 1 2 1 0 2 3 1 0 3 3
+Neighs:    136356 ave 141068 max 131633 min
+Histogram: 4 1 2 1 0 0 0 3 2 3
+
+Total # of neighbors = 2181688
+Ave neighs/atom = 111.016
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1640495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1640495    817.56857   -271.91643   -70762.172    -72838.87   -70824.922    369734.87 
+ 1650000    793.60307   -195.43605   -70929.525    -72945.35   -70974.487    368589.66 
+ 1690000    800.65656   -489.72449   -70947.606   -72981.347   -71060.262    368563.22 
+Loop time of 2285.3 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.872 ns/day, 12.823 hours/ns, 21.662 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1431.5     | 1471.5     | 1516.5     |  80.6 | 64.39
+Neigh   | 691.79     | 694.42     | 697.03     |   6.0 | 30.39
+Comm    | 48.99      | 95.086     | 135.66     | 330.8 |  4.16
+Output  | 0.1508     | 0.15089    | 0.15217    |   0.1 |  0.01
+Modify  | 15.268     | 18.439     | 22.924     |  72.1 |  0.81
+Other   |            | 5.683      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1239 max 1216 min
+Histogram: 1 1 1 1 1 2 6 1 1 1
+Nghost:    5076.06 ave 5109 max 5040 min
+Histogram: 1 1 1 2 4 1 2 1 1 2
+Neighs:    136792 ave 141744 max 132948 min
+Histogram: 3 4 1 0 0 1 2 1 3 1
+
+Total # of neighbors = 2188669
+Ave neighs/atom = 111.371
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1690000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1690000    800.65656   -489.72449   -70947.606   -72981.347   -71060.262    368563.22 
+ 1690495    762.93704    173.55568   -71097.404   -73035.334   -71057.582     367619.5 
+Loop time of 22.4789 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.903 ns/day, 12.614 hours/ns, 22.021 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 14.087     | 14.496     | 14.943     |   8.1 | 64.49
+Neigh   | 6.7832     | 6.8478     | 6.9169     |   1.4 | 30.46
+Comm    | 0.47873    | 0.90048    | 1.3448     |  32.5 |  4.01
+Output  | 0.0001092  | 0.00013413 | 0.00042892 |   0.0 |  0.00
+Modify  | 0.15346    | 0.17705    | 0.19516    |   4.3 |  0.79
+Other   |            | 0.05728    |            |       |  0.25
+
+Nlocal:    1228.25 ave 1240 max 1212 min
+Histogram: 1 1 1 0 2 4 0 3 3 1
+Nghost:    5079.56 ave 5100 max 5051 min
+Histogram: 1 1 2 0 2 1 2 3 2 2
+Neighs:    137221 ave 141841 max 132655 min
+Histogram: 2 2 4 0 0 0 2 1 2 3
+
+Total # of neighbors = 2195540
+Ave neighs/atom = 111.721
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1690495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1690495    762.93704    173.55568   -71097.404   -73035.334   -71057.582     367619.5 
+ 1700000    747.49916      300.574   -71266.508   -73165.224   -71197.805    366211.84 
+ 1740000    745.48959   -439.57141   -71282.007   -73175.618    -71382.56    366504.26 
+Loop time of 2324.97 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.840 ns/day, 13.046 hours/ns, 21.293 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1443.4     | 1491.3     | 1547.1     |  88.8 | 64.14
+Neigh   | 691.69     | 693.97     | 696.05     |   5.4 | 29.85
+Comm    | 59.81      | 114.21     | 166.07     | 342.6 |  4.91
+Output  | 0.14391    | 0.14402    | 0.14469    |   0.0 |  0.01
+Modify  | 15.502     | 19.67      | 27.182     | 103.2 |  0.85
+Other   |            | 5.687      |            |       |  0.24
+
+Nlocal:    1228.25 ave 1236 max 1221 min
+Histogram: 3 1 1 2 2 0 1 1 4 1
+Nghost:    5092.19 ave 5128 max 5065 min
+Histogram: 3 0 2 3 1 3 2 1 0 1
+Neighs:    137688 ave 141789 max 132214 min
+Histogram: 1 0 6 1 0 0 0 0 4 4
+
+Total # of neighbors = 2203004
+Ave neighs/atom = 112.101
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1740000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1740000    745.48959   -439.57141   -71282.007   -73175.618    -71382.56    366504.26 
+ 1740495    717.65325    322.86652   -71460.012   -73282.917   -71386.433    365123.01 
+Loop time of 22.7068 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.883 ns/day, 12.742 hours/ns, 21.800 timesteps/s
+99.7% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 14.122     | 14.634     | 15.133     |   8.8 | 64.45
+Neigh   | 6.787      | 6.8653     | 6.9273     |   1.4 | 30.23
+Comm    | 0.45974    | 0.97204    | 1.4967     |  35.2 |  4.28
+Output  | 0.00010991 | 0.00013776 | 0.00039601 |   0.0 |  0.00
+Modify  | 0.15161    | 0.17857    | 0.24598    |   9.1 |  0.79
+Other   |            | 0.05697    |            |       |  0.25
+
+Nlocal:    1228.25 ave 1244 max 1215 min
+Histogram: 1 1 1 2 6 2 1 0 1 1
+Nghost:    5107.56 ave 5129 max 5078 min
+Histogram: 2 1 0 0 1 3 5 1 0 3
+Neighs:    138251 ave 143330 max 133064 min
+Histogram: 2 3 2 1 0 0 1 1 4 2
+
+Total # of neighbors = 2212010
+Ave neighs/atom = 112.559
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1740495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1740495    717.65325    322.86652   -71460.012   -73282.917   -71386.433    365123.01 
+ 1750000    703.53579     243.5937   -71637.555     -73424.6   -71582.245    363790.13 
+ 1790000    690.27219   -213.60473   -71682.687   -73436.041   -71731.194    363830.74 
+Loop time of 2303.05 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.857 ns/day, 12.923 hours/ns, 21.495 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1440.9     | 1485.6     | 1540       |  86.5 | 64.51
+Neigh   | 690.26     | 692.92     | 695.48     |   5.6 | 30.09
+Comm    | 48.462     | 99.558     | 146.02     | 351.7 |  4.32
+Output  | 0.13781    | 0.13801    | 0.13928    |   0.1 |  0.01
+Modify  | 15.586     | 19.114     | 27.902     | 116.0 |  0.83
+Other   |            | 5.694      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1242 max 1216 min
+Histogram: 2 1 2 2 0 5 1 1 0 2
+Nghost:    5112.5 ave 5133 max 5081 min
+Histogram: 2 0 1 0 2 2 1 2 3 3
+Neighs:    138780 ave 144232 max 133995 min
+Histogram: 1 6 1 0 0 0 2 2 3 1
+
+Total # of neighbors = 2220483
+Ave neighs/atom = 112.99
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1790000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1790000    690.27219   -213.60473   -71682.687   -73436.041   -71731.194    363830.74 
+ 1790495    666.99535     110.1845   -71822.451    -73516.68   -71797.493    362903.28 
+Loop time of 22.6537 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.888 ns/day, 12.713 hours/ns, 21.851 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 14.17      | 14.643     | 15.116     |   7.8 | 64.64
+Neigh   | 6.8131     | 6.8492     | 6.8869     |   0.7 | 30.23
+Comm    | 0.45192    | 0.93158    | 1.4111     |  32.5 |  4.11
+Output  | 0.000108   | 0.00013492 | 0.00045514 |   0.0 |  0.00
+Modify  | 0.1533     | 0.17271    | 0.20396    |   4.9 |  0.76
+Other   |            | 0.05705    |            |       |  0.25
+
+Nlocal:    1228.25 ave 1241 max 1220 min
+Histogram: 1 2 5 2 2 1 1 0 1 1
+Nghost:    5117.75 ave 5144 max 5100 min
+Histogram: 1 3 2 1 4 2 2 0 0 1
+Neighs:    139182 ave 144111 max 134429 min
+Histogram: 1 3 4 0 0 0 0 5 2 1
+
+Total # of neighbors = 2226910
+Ave neighs/atom = 113.317
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1790495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1790495    666.99535     110.1845   -71822.451    -73516.68   -71797.493    362903.28 
+ 1800000    652.65646   -449.47031   -71992.904   -73650.711   -72094.407     361816.5 
+ 1840000    646.54875     59.92908   -72005.726   -73648.019   -71992.202    361576.39 
+Loop time of 2307.02 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.854 ns/day, 12.945 hours/ns, 21.458 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1438.8     | 1488.6     | 1547       |  85.8 | 64.53
+Neigh   | 687.82     | 691.99     | 695.01     |   7.7 | 29.99
+Comm    | 47.749     | 101.33     | 152.19     | 348.3 |  4.39
+Output  | 0.12724    | 0.12733    | 0.12786    |   0.0 |  0.01
+Modify  | 15.464     | 19.261     | 28.676     | 123.6 |  0.83
+Other   |            | 5.675      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1243 max 1219 min
+Histogram: 2 2 3 2 2 1 1 2 0 1
+Nghost:    5132.31 ave 5160 max 5110 min
+Histogram: 2 2 1 1 2 4 2 0 0 2
+Neighs:    139745 ave 143812 max 135650 min
+Histogram: 4 2 0 2 0 0 0 2 3 3
+
+Total # of neighbors = 2235920
+Ave neighs/atom = 113.776
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1840000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1840000    646.54875     59.92908   -72005.726   -73648.019   -71992.202    361576.39 
+ 1840495    619.14279      359.848   -72181.904   -73754.583   -72100.945    360458.37 
+Loop time of 22.758 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.879 ns/day, 12.771 hours/ns, 21.751 timesteps/s
+99.7% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 14.161     | 14.678     | 15.248     |   8.2 | 64.50
+Neigh   | 6.7778     | 6.8452     | 6.8813     |   1.0 | 30.08
+Comm    | 0.45054    | 0.98364    | 1.503      |  34.4 |  4.32
+Output  | 0.00011802 | 0.0001384  | 0.00040317 |   0.0 |  0.00
+Modify  | 0.1478     | 0.19355    | 0.31867    |  16.4 |  0.85
+Other   |            | 0.05734    |            |       |  0.25
+
+Nlocal:    1228.25 ave 1239 max 1219 min
+Histogram: 2 0 1 2 4 3 1 0 2 1
+Nghost:    5130 ave 5155 max 5082 min
+Histogram: 1 1 0 1 2 2 1 1 3 4
+Neighs:    140238 ave 143960 max 136241 min
+Histogram: 5 1 2 0 0 0 1 0 3 4
+
+Total # of neighbors = 2243813
+Ave neighs/atom = 114.177
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1840495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1840495    619.14279      359.848   -72181.904   -73754.583   -72100.945    360458.37 
+ 1850000    602.34939    585.24455   -72353.103   -73883.125     -72221.9    359182.74 
+ 1890000    595.21619    179.64482   -72358.781   -73870.684   -72318.485    359383.38 
+Loop time of 2315.34 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.847 ns/day, 12.992 hours/ns, 21.381 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1448.2     | 1492.2     | 1556.4     |  84.7 | 64.45
+Neigh   | 688.67     | 691.11     | 693.06     |   4.5 | 29.85
+Comm    | 47.3       | 104.71     | 154.18     | 369.0 |  4.52
+Output  | 0.13047    | 0.13062    | 0.13221    |   0.1 |  0.01
+Modify  | 15.157     | 21.497     | 39.13      | 219.1 |  0.93
+Other   |            | 5.673      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1237 max 1214 min
+Histogram: 1 1 2 0 1 1 2 2 2 4
+Nghost:    5152.12 ave 5185 max 5125 min
+Histogram: 2 0 3 2 2 0 5 1 0 1
+Neighs:    140756 ave 145734 max 135931 min
+Histogram: 2 1 5 0 0 1 2 1 1 3
+
+Total # of neighbors = 2252097
+Ave neighs/atom = 114.599
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1890000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1890000    595.21619    179.64482   -72358.781   -73870.684   -72318.485    359383.38 
+ 1890495    567.58037    97.624514   -72529.006   -73970.712   -72507.155    358621.73 
+Loop time of 22.8054 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.875 ns/day, 12.798 hours/ns, 21.705 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 14.327     | 14.769     | 15.332     |   8.3 | 64.76
+Neigh   | 6.8077     | 6.8481     | 6.9112     |   1.2 | 30.03
+Comm    | 0.45487    | 0.9441     | 1.4112     |  35.1 |  4.14
+Output  | 0.00010991 | 0.00013164 | 0.00042105 |   0.0 |  0.00
+Modify  | 0.15136    | 0.18705    | 0.28871    |  13.5 |  0.82
+Other   |            | 0.05722    |            |       |  0.25
+
+Nlocal:    1228.25 ave 1241 max 1215 min
+Histogram: 2 0 1 1 4 2 2 0 2 2
+Nghost:    5154.88 ave 5177 max 5131 min
+Histogram: 1 1 1 2 2 3 2 2 1 1
+Neighs:    141041 ave 146477 max 135727 min
+Histogram: 2 2 4 0 0 0 0 5 2 1
+
+Total # of neighbors = 2256649
+Ave neighs/atom = 114.831
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1890495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1890495    567.58037    97.624514   -72529.006   -73970.712   -72507.155    358621.73 
+ 1900000    550.14248    69.611013   -72692.308    -74089.72   -72676.781    357368.46 
+ 1940000    553.55235   -685.86978   -72714.123   -74120.197   -72867.193    357567.16 
+Loop time of 2311.6 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.850 ns/day, 12.971 hours/ns, 21.416 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1454.8     | 1497.4     | 1550.2     |  84.3 | 64.78
+Neigh   | 686.74     | 690.49     | 695.13     |   9.1 | 29.87
+Comm    | 50.161     | 98.677     | 144.32     | 345.4 |  4.27
+Output  | 0.13847    | 0.13851    | 0.13907    |   0.0 |  0.01
+Modify  | 15.812     | 19.195     | 28.295     | 119.6 |  0.83
+Other   |            | 5.683      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1238 max 1215 min
+Histogram: 1 1 2 1 0 3 3 0 1 4
+Nghost:    5163.81 ave 5203 max 5139 min
+Histogram: 1 1 7 2 1 1 1 1 0 1
+Neighs:    141557 ave 145983 max 136811 min
+Histogram: 1 2 3 2 0 0 2 2 1 3
+
+Total # of neighbors = 2264917
+Ave neighs/atom = 115.251
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1940000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1940000    553.55235   -685.86978   -72714.123   -74120.197   -72867.193    357567.16 
+ 1940495    517.21364     133.7367   -72885.374   -74199.143   -72855.625    356394.49 
+Loop time of 22.7861 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.877 ns/day, 12.787 hours/ns, 21.724 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 14.245     | 14.747     | 15.316     |   8.7 | 64.72
+Neigh   | 6.7852     | 6.8483     | 6.9442     |   1.7 | 30.05
+Comm    | 0.45753    | 0.94843    | 1.4271     |  35.2 |  4.16
+Output  | 0.00011206 | 0.00013711 | 0.00038695 |   0.0 |  0.00
+Modify  | 0.1501     | 0.18462    | 0.28222    |  13.1 |  0.81
+Other   |            | 0.05719    |            |       |  0.25
+
+Nlocal:    1228.25 ave 1239 max 1214 min
+Histogram: 2 1 1 1 2 0 2 1 2 4
+Nghost:    5161.5 ave 5184 max 5138 min
+Histogram: 1 3 2 0 1 2 3 1 1 2
+Neighs:    142100 ave 146689 max 136578 min
+Histogram: 2 1 1 4 0 0 1 2 1 4
+
+Total # of neighbors = 2273595
+Ave neighs/atom = 115.693
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1940495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1940495    517.21364     133.7367   -72885.374   -74199.143   -72855.625    356394.49 
+ 1950000    495.99358   -228.45108   -73061.458   -74321.327    -73112.13    355369.93 
+ 1990000    496.12432     101.8547   -73104.264   -74364.465    -73081.71    354773.86 
+Loop time of 2321.9 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.842 ns/day, 13.028 hours/ns, 21.321 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1454.3     | 1500.9     | 1563.2     |  84.4 | 64.64
+Neigh   | 687.15     | 689.55     | 692.62     |   6.5 | 29.70
+Comm    | 46.853     | 104.3      | 153.88     | 368.9 |  4.49
+Output  | 0.13162    | 0.13172    | 0.13314    |   0.1 |  0.01
+Modify  | 15.142     | 21.291     | 38.902     | 219.8 |  0.92
+Other   |            | 5.686      |            |       |  0.24
+
+Nlocal:    1228.25 ave 1240 max 1215 min
+Histogram: 1 0 3 1 2 2 3 1 1 2
+Nghost:    5169.5 ave 5193 max 5152 min
+Histogram: 2 2 3 2 1 1 2 0 2 1
+Neighs:    142843 ave 147530 max 138012 min
+Histogram: 2 4 1 1 0 0 0 1 5 2
+
+Total # of neighbors = 2285484
+Ave neighs/atom = 116.298
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1990000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1990000    496.12432     101.8547   -73104.264   -74364.465    -73081.71    354773.86 
+ 1990495     467.7931    680.46839   -73247.348   -74435.585    -73097.04    353903.74 
+Loop time of 22.9237 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.866 ns/day, 12.864 hours/ns, 21.593 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 14.337     | 14.853     | 15.432     |   8.1 | 64.79
+Neigh   | 6.7748     | 6.8441     | 6.9142     |   1.3 | 29.86
+Comm    | 0.45397    | 0.97537    | 1.5045     |  35.7 |  4.25
+Output  | 8.9884e-05 | 0.00011218 | 0.00038123 |   0.0 |  0.00
+Modify  | 0.1467     | 0.19413    | 0.32169    |  16.6 |  0.85
+Other   |            | 0.05686    |            |       |  0.25
+
+Nlocal:    1228.25 ave 1242 max 1220 min
+Histogram: 2 3 4 2 1 1 0 0 1 2
+Nghost:    5177.06 ave 5197 max 5164 min
+Histogram: 4 3 0 3 0 1 2 1 1 1
+Neighs:    143227 ave 148300 max 138669 min
+Histogram: 4 4 0 0 0 0 0 2 3 3
+
+Total # of neighbors = 2291634
+Ave neighs/atom = 116.611
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1990495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 1990495     467.7931    680.46839   -73247.348   -74435.585    -73097.04    353903.74 
+ 2000000     451.8356    295.70746   -73384.042   -74531.746    -73318.86    353161.36 
+ 2040000    451.99249    28.955492   -73420.741   -74568.843   -73414.362     352965.9 
+Loop time of 2324.52 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.840 ns/day, 13.043 hours/ns, 21.297 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1454.7     | 1505.8     | 1566.7     |  86.6 | 64.78
+Neigh   | 684.97     | 688.64     | 692.18     |   6.7 | 29.62
+Comm    | 47.571     | 104.88     | 156.49     | 357.1 |  4.51
+Output  | 0.1438     | 0.14389    | 0.14441    |   0.0 |  0.01
+Modify  | 15.288     | 19.387     | 29.234     | 129.0 |  0.83
+Other   |            | 5.693      |            |       |  0.24
+
+Nlocal:    1228.25 ave 1241 max 1212 min
+Histogram: 2 0 1 1 1 2 4 3 1 1
+Nghost:    5182.75 ave 5215 max 5151 min
+Histogram: 1 2 2 2 1 2 2 2 1 1
+Neighs:    143703 ave 148531 max 136961 min
+Histogram: 1 0 2 4 1 0 1 0 3 4
+
+Total # of neighbors = 2299253
+Ave neighs/atom = 116.998
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2040000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 2040000    451.99249    28.955492   -73420.741   -74568.843   -73414.362     352965.9 
+ 2040495    422.69943    -177.6718   -73580.055    -74653.75   -73619.123    352296.32 
+Loop time of 23.0828 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.853 ns/day, 12.953 hours/ns, 21.445 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 14.527     | 14.988     | 15.475     |   7.9 | 64.93
+Neigh   | 6.7892     | 6.8458     | 6.9367     |   1.5 | 29.66
+Comm    | 0.45536    | 1.015      | 1.4294     |  32.9 |  4.40
+Output  | 0.00011301 | 0.00013532 | 0.00039697 |   0.0 |  0.00
+Modify  | 0.15155    | 0.17713    | 0.2454     |   9.3 |  0.77
+Other   |            | 0.05706    |            |       |  0.25
+
+Nlocal:    1228.25 ave 1237 max 1218 min
+Histogram: 1 0 1 2 3 2 3 2 1 1
+Nghost:    5188.75 ave 5210 max 5173 min
+Histogram: 1 3 3 1 2 1 0 4 0 1
+Neighs:    144053 ave 148460 max 139512 min
+Histogram: 2 5 1 0 0 0 0 1 5 2
+
+Total # of neighbors = 2304854
+Ave neighs/atom = 117.283
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2040495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 2040495    422.69943    -177.6718   -73580.055    -74653.75   -73619.123    352296.32 
+ 2050000    402.73715    547.92148   -73710.765   -74733.754   -73590.641    351255.11 
+ 2090000    399.51576   -221.80102   -73743.639   -74758.445   -73792.276    351332.58 
+Loop time of 2321.8 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.842 ns/day, 13.028 hours/ns, 21.322 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1453.8     | 1505.2     | 1565.1     |  86.6 | 64.83
+Neigh   | 684.17     | 687.53     | 691.38     |   9.4 | 29.61
+Comm    | 46.73      | 104.29     | 155.81     | 348.6 |  4.49
+Output  | 0.12832    | 0.12841    | 0.1297     |   0.1 |  0.01
+Modify  | 15.246     | 18.977     | 28.28      | 123.0 |  0.82
+Other   |            | 5.691      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1241 max 1211 min
+Histogram: 1 0 1 1 0 4 3 4 1 1
+Nghost:    5196.06 ave 5227 max 5175 min
+Histogram: 2 2 2 1 4 2 1 0 0 2
+Neighs:    144518 ave 148744 max 138607 min
+Histogram: 2 2 1 2 1 0 0 0 2 6
+
+Total # of neighbors = 2312282
+Ave neighs/atom = 117.661
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2090000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 2090000    399.51576   -221.80102   -73743.639   -74758.445   -73792.276    351332.58 
+ 2090495    373.94153    116.78721   -73888.577   -74838.422   -73863.028    350491.29 
+Loop time of 23.0191 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.858 ns/day, 12.918 hours/ns, 21.504 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 14.473     | 14.912     | 15.507     |   8.1 | 64.78
+Neigh   | 6.775      | 6.8372     | 6.8997     |   1.1 | 29.70
+Comm    | 0.45274    | 1.0246     | 1.4925     |  33.2 |  4.45
+Output  | 0.00011015 | 0.00013211 | 0.00039721 |   0.0 |  0.00
+Modify  | 0.15059    | 0.18764    | 0.28779    |  13.3 |  0.82
+Other   |            | 0.05733    |            |       |  0.25
+
+Nlocal:    1228.25 ave 1235 max 1222 min
+Histogram: 2 1 0 4 3 0 2 1 1 2
+Nghost:    5208.12 ave 5235 max 5185 min
+Histogram: 3 0 0 2 4 2 2 2 0 1
+Neighs:    144889 ave 149006 max 140770 min
+Histogram: 4 2 2 0 0 0 0 1 5 2
+
+Total # of neighbors = 2318220
+Ave neighs/atom = 117.964
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2090495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 2090495    373.94153    116.78721   -73888.577   -74838.422   -73863.028    350491.29 
+ 2100000    350.57713    187.10125   -74016.978   -74907.476   -73976.127    349810.77 
+ 2140000    345.05146   -41.913542    -74030.83   -74907.293   -74039.982    349839.21 
+Loop time of 2351.47 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.819 ns/day, 13.194 hours/ns, 21.053 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1464.3     | 1517.5     | 1572.4     |  80.7 | 64.53
+Neigh   | 682.94     | 687.02     | 693.47     |  10.2 | 29.22
+Comm    | 64.199     | 120.88     | 176.64     | 314.0 |  5.14
+Output  | 0.14254    | 0.14266    | 0.14301    |   0.0 |  0.01
+Modify  | 15.637     | 20.212     | 27.047     | 104.2 |  0.86
+Other   |            | 5.704      |            |       |  0.24
+
+Nlocal:    1228.25 ave 1241 max 1214 min
+Histogram: 1 2 0 1 2 3 2 4 0 1
+Nghost:    5201.31 ave 5222 max 5182 min
+Histogram: 2 1 0 3 4 1 0 2 0 3
+Neighs:    145189 ave 149849 max 139424 min
+Histogram: 1 1 3 3 0 0 1 1 2 4
+
+Total # of neighbors = 2323020
+Ave neighs/atom = 118.208
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2140000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 2140000    345.05146   -41.913542    -74030.83   -74907.293   -74039.982    349839.21 
+ 2140495    323.97414   -77.362951   -74167.234   -74990.158   -74184.097     349226.4 
+Loop time of 23.2159 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.842 ns/day, 13.028 hours/ns, 21.322 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 14.545     | 15.075     | 15.532     |   8.1 | 64.93
+Neigh   | 6.7737     | 6.8384     | 6.9243     |   1.4 | 29.46
+Comm    | 0.53789    | 1.0418     | 1.6166     |  34.9 |  4.49
+Output  | 0.00011086 | 0.00013384 | 0.00040889 |   0.0 |  0.00
+Modify  | 0.15569    | 0.20368    | 0.31595    |  14.6 |  0.88
+Other   |            | 0.05726    |            |       |  0.25
+
+Nlocal:    1228.25 ave 1239 max 1218 min
+Histogram: 1 1 3 3 1 1 2 1 1 2
+Nghost:    5205.81 ave 5249 max 5176 min
+Histogram: 2 1 3 3 1 4 0 1 0 1
+Neighs:    145502 ave 149879 max 141013 min
+Histogram: 5 2 1 0 0 0 0 1 3 4
+
+Total # of neighbors = 2328036
+Ave neighs/atom = 118.463
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2140495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 2140495    323.97414   -77.362951   -74167.234   -74990.158   -74184.097     349226.4 
+ 2150000    302.83703   -148.81698   -74290.295   -75059.528   -74322.679    348651.03 
+ 2190000    296.97833   -538.39453   -74301.762   -75056.114   -74418.965    348777.68 
+Loop time of 2491.5 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.717 ns/day, 13.980 hours/ns, 19.870 timesteps/s
+99.5% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1499.7     | 1573.6     | 1729       | 141.4 | 63.16
+Neigh   | 678.35     | 686.88     | 692.52     |  13.0 | 27.57
+Comm    | 52.167     | 201.73     | 281.48     | 413.6 |  8.10
+Output  | 0.16033    | 0.16042    | 0.16174    |   0.1 |  0.01
+Modify  | 15.278     | 23.458     | 42.688     | 231.9 |  0.94
+Other   |            | 5.664      |            |       |  0.23
+
+Nlocal:    1228.25 ave 1243 max 1207 min
+Histogram: 1 0 0 1 4 1 4 2 2 1
+Nghost:    5210.56 ave 5232 max 5183 min
+Histogram: 1 0 3 2 1 1 1 4 1 2
+Neighs:    145719 ave 150928 max 138983 min
+Histogram: 1 2 2 3 0 0 0 1 4 3
+
+Total # of neighbors = 2331502
+Ave neighs/atom = 118.639
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2190000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 2190000    296.97833   -538.39453   -74301.762   -75056.114   -74418.965    348777.68 
+ 2190495    274.01173    222.15265   -74439.024   -75135.039   -74390.793    347847.73 
+Loop time of 28.4727 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.502 ns/day, 15.978 hours/ns, 17.385 timesteps/s
+99.4% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 15.778     | 17.001     | 20.892     |  34.6 | 59.71
+Neigh   | 6.7884     | 6.852      | 6.9122     |   1.5 | 24.07
+Comm    | 0.4809     | 4.2734     | 5.6163     |  69.3 | 15.01
+Output  | 0.00010204 | 0.00012656 | 0.00044894 |   0.0 |  0.00
+Modify  | 0.14707    | 0.28948    | 0.7073     |  44.8 |  1.02
+Other   |            | 0.05648    |            |       |  0.20
+
+Nlocal:    1228.25 ave 1237 max 1209 min
+Histogram: 1 0 0 0 2 1 4 2 2 4
+Nghost:    5219.88 ave 5243 max 5204 min
+Histogram: 3 1 1 2 3 3 1 1 0 1
+Neighs:    146184 ave 150481 max 139128 min
+Histogram: 1 0 2 4 1 0 0 0 1 7
+
+Total # of neighbors = 2338944
+Ave neighs/atom = 119.018
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2190495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 2190495    274.01173    222.15265   -74439.024   -75135.039   -74390.793    347847.73 
+ 2200000    248.77503    64.273276   -74571.415   -75203.327   -74557.483    347302.35 
+ 2240000    248.28491    82.364584   -74577.799   -75208.465   -74559.942    347352.11 
+Loop time of 2823.3 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.515 ns/day, 15.842 hours/ns, 17.534 timesteps/s
+99.5% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1600       | 1704.2     | 2034.1     | 256.0 | 60.36
+Neigh   | 678.78     | 690.1      | 714.76     |  35.8 | 24.44
+Comm    | 53.35      | 396.37     | 514.3      | 564.4 | 14.04
+Output  | 0.13855    | 0.13862    | 0.13913    |   0.0 |  0.00
+Modify  | 15.648     | 26.874     | 56.265     | 327.2 |  0.95
+Other   |            | 5.671      |            |       |  0.20
+
+Nlocal:    1228.25 ave 1242 max 1213 min
+Histogram: 1 1 2 0 1 6 2 1 1 1
+Nghost:    5219.06 ave 5242 max 5197 min
+Histogram: 1 2 2 3 2 0 2 0 1 3
+Neighs:    146417 ave 150150 max 140357 min
+Histogram: 1 1 2 3 1 0 0 0 1 7
+
+Total # of neighbors = 2342675
+Ave neighs/atom = 119.208
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2240000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 2240000    248.28491    82.364584   -74577.799   -75208.465   -74559.942    347352.11 
+ 2240495    224.45248   -45.389081   -74705.455   -75275.584   -74715.279    346773.13 
+Loop time of 35.1464 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.217 ns/day, 19.723 hours/ns, 14.084 timesteps/s
+99.4% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 19.798     | 20.93      | 24.806     |  30.7 | 59.55
+Neigh   | 6.7303     | 7.1684     | 9.4702     |  32.3 | 20.40
+Comm    | 0.57776    | 6.6522     | 8.2427     |  87.0 | 18.93
+Output  | 0.00012422 | 0.00014749 | 0.00046706 |   0.0 |  0.00
+Modify  | 0.18111    | 0.33766    | 0.76359    |  42.3 |  0.96
+Other   |            | 0.05853    |            |       |  0.17
+
+Nlocal:    1228.25 ave 1245 max 1210 min
+Histogram: 1 0 1 1 5 2 2 3 0 1
+Nghost:    5220.06 ave 5246 max 5200 min
+Histogram: 3 2 1 1 2 3 0 0 2 2
+Neighs:    146688 ave 152240 max 140826 min
+Histogram: 1 3 3 1 0 0 1 3 3 1
+
+Total # of neighbors = 2347001
+Ave neighs/atom = 119.428
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2240495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 2240495    224.45248   -45.389081   -74705.455   -75275.584   -74715.279    346773.13 
+ 2250000    199.67324   -262.56326   -74834.085   -75341.273   -74890.843    346338.84 
+ 2290000    201.61941    231.25302    -74837.88   -75350.012    -74787.93    346071.08 
+Loop time of 2453.01 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.744 ns/day, 13.764 hours/ns, 20.181 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1504.1     | 1567.4     | 1620.8     |  83.0 | 63.90
+Neigh   | 676.29     | 687.15     | 705.66     |  28.1 | 28.01
+Comm    | 100.11     | 171.98     | 241.74     | 292.0 |  7.01
+Output  | 0.18731    | 0.18768    | 0.18882    |   0.1 |  0.01
+Modify  | 15.606     | 20.566     | 28.008     | 107.9 |  0.84
+Other   |            | 5.759      |            |       |  0.23
+
+Nlocal:    1228.25 ave 1239 max 1214 min
+Histogram: 1 1 1 0 2 3 5 0 1 2
+Nghost:    5228.69 ave 5253 max 5201 min
+Histogram: 1 1 0 2 4 2 2 2 0 2
+Neighs:    147005 ave 152404 max 141036 min
+Histogram: 1 1 5 1 0 0 0 3 3 2
+
+Total # of neighbors = 2352084
+Ave neighs/atom = 119.687
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2290000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 2290000    201.61941    231.25302    -74837.88   -75350.012    -74787.93    346071.08 
+ 2290495    174.98058    141.13889   -74964.873   -75409.339   -74934.431    345569.06 
+Loop time of 22.8272 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.874 ns/day, 12.810 hours/ns, 21.685 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 14.351     | 14.875     | 15.318     |   7.8 | 65.16
+Neigh   | 6.7445     | 6.8112     | 6.845      |   1.0 | 29.84
+Comm    | 0.45413    | 0.90746    | 1.4322     |  33.0 |  3.98
+Output  | 0.000108   | 0.00012811 | 0.00039411 |   0.0 |  0.00
+Modify  | 0.15266    | 0.17535    | 0.23777    |   8.6 |  0.77
+Other   |            | 0.05789    |            |       |  0.25
+
+Nlocal:    1228.25 ave 1238 max 1214 min
+Histogram: 1 0 0 0 1 5 6 1 1 1
+Nghost:    5228.56 ave 5248 max 5204 min
+Histogram: 2 0 0 4 2 0 2 2 1 3
+Neighs:    147272 ave 152390 max 141619 min
+Histogram: 1 2 5 0 0 0 0 2 5 1
+
+Total # of neighbors = 2356354
+Ave neighs/atom = 119.904
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2290495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 2290495    174.98058    141.13889   -74964.873   -75409.339   -74934.431    345569.06 
+ 2300000    149.09841   -14.963512   -75100.864   -75479.588   -75104.087    345057.81 
+ 2340000    149.27994    187.30642   -75103.403   -75482.588   -75063.077     344944.2 
+Loop time of 2530.51 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.690 ns/day, 14.199 hours/ns, 19.563 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1545.9     | 1609.3     | 1696.9     |  95.6 | 63.60
+Neigh   | 674.54     | 689.03     | 726.95     |  55.3 | 27.23
+Comm    | 70.1       | 203.67     | 279.31     | 367.0 |  8.05
+Output  | 0.2037     | 0.20374    | 0.20427    |   0.0 |  0.01
+Modify  | 15.864     | 22.506     | 31.651     | 129.4 |  0.89
+Other   |            | 5.757      |            |       |  0.23
+
+Nlocal:    1228.25 ave 1240 max 1211 min
+Histogram: 1 0 1 0 2 5 1 4 0 2
+Nghost:    5236.81 ave 5261 max 5218 min
+Histogram: 4 3 0 2 1 0 2 0 0 4
+Neighs:    147585 ave 151869 max 141503 min
+Histogram: 1 1 3 2 1 0 0 0 2 6
+
+Total # of neighbors = 2361367
+Ave neighs/atom = 120.159
+Neighbor list builds = 49505
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2340000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 2340000    149.27994    187.30642   -75103.403   -75482.588   -75063.077     344944.2 
+ 2340495    127.02023    38.999508    -75219.46   -75542.103   -75211.074    344534.51 
+Loop time of 22.8565 on 16 procs for 495 steps with 19652 atoms
+
+Performance: 1.871 ns/day, 12.826 hours/ns, 21.657 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 14.361     | 14.865     | 15.348     |   7.2 | 65.04
+Neigh   | 6.7041     | 6.8027     | 6.8779     |   1.4 | 29.76
+Comm    | 0.46625    | 0.92747    | 1.4671     |  32.7 |  4.06
+Output  | 0.00013185 | 0.00015897 | 0.00049782 |   0.0 |  0.00
+Modify  | 0.14757    | 0.20376    | 0.34556    |  18.2 |  0.89
+Other   |            | 0.05729    |            |       |  0.25
+
+Nlocal:    1228.25 ave 1242 max 1211 min
+Histogram: 1 0 3 1 0 2 3 5 0 1
+Nghost:    5241.38 ave 5259 max 5226 min
+Histogram: 3 1 1 3 2 1 1 0 1 3
+Neighs:    147758 ave 152411 max 141565 min
+Histogram: 1 2 2 2 1 0 0 1 3 4
+
+Total # of neighbors = 2364129
+Ave neighs/atom = 120.3
+Neighbor list builds = 495
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2340495
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.929 | 4.932 | 4.935 Mbytes
+Step Temp Press TotEng PotEng Enthalpy Volume 
+ 2340495    127.02023    38.999508    -75219.46   -75542.103   -75211.074    344534.51 
+ 2350000    100.84799   -21.278546   -75357.624   -75613.788   -75362.193    344009.82 
+ 2390000    98.951493   -47.055329   -75363.011   -75614.357   -75373.114    344010.86 
+Loop time of 2307.04 on 16 procs for 49505 steps with 19652 atoms
+
+Performance: 1.854 ns/day, 12.945 hours/ns, 21.458 timesteps/s
+99.6% CPU use with 16 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1447.1     | 1495.8     | 1552.5     |  74.8 | 64.84
+Neigh   | 670.96     | 681.19     | 687.81     |  14.4 | 29.53
+Comm    | 47.651     | 100.65     | 155.84     | 356.4 |  4.36
+Output  | 0.15172    | 0.15185    | 0.15301    |   0.1 |  0.01
+Modify  | 14.804     | 23.522     | 47.263     | 282.6 |  1.02
+Other   |            | 5.723      |            |       |  0.25
+
+Nlocal:    1228.25 ave 1238 max 1207 min
+Histogram: 1 0 0 1 0 3 1 4 3 3
+Nghost:    5247.12 ave 5266 max 5225 min
+Histogram: 1 1 3 0 1 3 3 1 1 2
+Neighs:    148029 ave 152490 max 141693 min
+Histogram: 1 0 4 3 0 0 0 1 1 6
+
+Total # of neighbors = 2368457
+Ave neighs/atom = 120.52
+Neighbor list builds = 49505
+Dangerous builds not checked
+Total wall time: 30:55:32
+TACC:  Shutdown complete. Exiting. 

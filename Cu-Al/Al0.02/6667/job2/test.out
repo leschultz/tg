@@ -1,0 +1,98 @@
+LAMMPS (12 Dec 2018)
+Lattice spacing in x,y,z = 4 4 4
+Created orthogonal box = (0 0 0) to (68 68 68)
+  1 by 1 by 1 MPI processor grid
+Created 19652 atoms
+  Time spent = 0.00349307 secs
+Setting atom values ...
+  417 settings made for type/fraction
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check no
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8.5
+  ghost atom cutoff = 8.5
+  binsize = 4.25, bins = 16 16 16
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair eam/alloy, perpetual
+      attributes: half, newton on
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/3d/newton
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 18.19 | 18.19 | 18.19 Mbytes
+Step Temp Press TotEng PotEng Enthalpy 
+       0          300   -181486.91   -62960.675   -63722.702   -98578.032 
+    1000    201.09566   -162724.23   -62960.666   -63471.467   -94895.789 
+Loop time of 115.148 on 1 procs for 1000 steps with 19652 atoms
+
+Performance: 0.750 ns/day, 31.986 hours/ns, 8.684 timesteps/s
+99.9% CPU use with 1 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 63.93      | 63.93      | 63.93      |   0.0 | 55.52
+Neigh   | 49.799     | 49.799     | 49.799     |   0.0 | 43.25
+Comm    | 0.85817    | 0.85817    | 0.85817    |   0.0 |  0.75
+Output  | 0.00025916 | 0.00025916 | 0.00025916 |   0.0 |  0.00
+Modify  | 0.28933    | 0.28933    | 0.28933    |   0.0 |  0.25
+Other   |            | 0.2712     |            |       |  0.24
+
+Nlocal:    19652 ave 19652 max 19652 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    20040 ave 20040 max 20040 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    1.56997e+06 ave 1.56997e+06 max 1.56997e+06 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 1569968
+Ave neighs/atom = 79.8885
+Neighbor list builds = 1000
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 18.19 | 18.19 | 18.19 Mbytes
+Step Temp Press TotEng PotEng Enthalpy 
+    1000    201.09566   -162724.23   -62960.666   -63471.467   -94895.789 
+    2000    315.11573   -378.93356   -68141.701   -68942.123   -68198.973 
+Loop time of 146.852 on 1 procs for 1000 steps with 19652 atoms
+
+Performance: 0.588 ns/day, 40.792 hours/ns, 6.810 timesteps/s
+99.9% CPU use with 1 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 77.38      | 77.38      | 77.38      |   0.0 | 52.69
+Neigh   | 67.35      | 67.35      | 67.35      |   0.0 | 45.86
+Comm    | 0.8226     | 0.8226     | 0.8226     |   0.0 |  0.56
+Output  | 0.00016308 | 0.00016308 | 0.00016308 |   0.0 |  0.00
+Modify  | 1.0202     | 1.0202     | 1.0202     |   0.0 |  0.69
+Other   |            | 0.278      |            |       |  0.19
+
+Nlocal:    19652 ave 19652 max 19652 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    20110 ave 20110 max 20110 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    2.01626e+06 ave 2.01626e+06 max 2.01626e+06 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 2016255
+Ave neighs/atom = 102.598
+Neighbor list builds = 1000
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 19.33 | 19.33 | 19.33 Mbytes
+Step Temp Press TotEng PotEng Enthalpy 
+    2000    315.11573   -378.93356   -68141.701   -68942.123   -68198.973 
+    6667    1538.5043   -813.31122   -60613.915   -64521.856   -60750.373 
+ERROR on proc 0: Neighbor list overflow, boost neigh_modify one (../npair_half_bin_atomonly_newton.cpp:114)
+Last command: run 8000

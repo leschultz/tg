@@ -1,0 +1,100 @@
+LAMMPS (12 Dec 2018)
+Lattice spacing in x,y,z = 4 4 4
+Created orthogonal box = (0 0 0) to (68 68 68)
+  1 by 1 by 1 MPI processor grid
+Created 19652 atoms
+  Time spent = 0.00414395 secs
+Setting atom values ...
+  417 settings made for type/fraction
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check no
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8.5
+  ghost atom cutoff = 8.5
+  binsize = 4.25, bins = 16 16 16
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair eam/alloy, perpetual
+      attributes: half, newton on
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/3d/newton
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 18.19 | 18.19 | 18.19 Mbytes
+Step Temp Press TotEng PotEng Enthalpy 
+       0          300   -181486.91   -62960.675   -63722.702   -98578.032 
+    1000    205.97533   -160949.88   -62960.665   -63483.861   -94547.567 
+Loop time of 162.643 on 1 procs for 1000 steps with 19652 atoms
+
+Performance: 0.531 ns/day, 45.179 hours/ns, 6.148 timesteps/s
+99.0% CPU use with 1 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 94.107     | 94.107     | 94.107     |   0.0 | 57.86
+Neigh   | 66.443     | 66.443     | 66.443     |   0.0 | 40.85
+Comm    | 1.2567     | 1.2567     | 1.2567     |   0.0 |  0.77
+Output  | 0.00016403 | 0.00016403 | 0.00016403 |   0.0 |  0.00
+Modify  | 0.44134    | 0.44134    | 0.44134    |   0.0 |  0.27
+Other   |            | 0.3951     |            |       |  0.24
+
+Nlocal:    19652 ave 19652 max 19652 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    20019 ave 20019 max 20019 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    1.57062e+06 ave 1.57062e+06 max 1.57062e+06 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 1570618
+Ave neighs/atom = 79.9215
+Neighbor list builds = 1000
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 1000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 18.19 | 18.19 | 18.19 Mbytes
+Step Temp Press TotEng PotEng Enthalpy 
+    1000    205.97533   -160949.88   -62960.665   -63483.861   -94547.567 
+    2000    318.72581   -287.64351   -68125.845   -68935.438   -68169.321 
+Loop time of 201.063 on 1 procs for 1000 steps with 19652 atoms
+
+Performance: 0.430 ns/day, 55.851 hours/ns, 4.974 timesteps/s
+98.1% CPU use with 1 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 108.46     | 108.46     | 108.46     |   0.0 | 53.94
+Neigh   | 89.545     | 89.545     | 89.545     |   0.0 | 44.54
+Comm    | 1.1486     | 1.1486     | 1.1486     |   0.0 |  0.57
+Output  | 0.079235   | 0.079235   | 0.079235   |   0.0 |  0.04
+Modify  | 1.4411     | 1.4411     | 1.4411     |   0.0 |  0.72
+Other   |            | 0.39       |            |       |  0.19
+
+Nlocal:    19652 ave 19652 max 19652 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    20108 ave 20108 max 20108 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    2.01661e+06 ave 2.01661e+06 max 2.01661e+06 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 2016611
+Ave neighs/atom = 102.616
+Neighbor list builds = 1000
+Dangerous builds not checked
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 2000
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 19.33 | 19.33 | 19.33 Mbytes
+Step Temp Press TotEng PotEng Enthalpy 
+    2000    318.72581   -287.64351   -68125.845   -68935.438   -68169.321 
+    4000    801.65079    733.51242   -65512.669   -67548.935   -65398.252 
+    6000    1340.2927    547.80423   -62179.388   -65583.853   -62089.894 
+    8000    1900.8292    900.62298   -56932.983   -61761.263     -56771.4 
+ERROR on proc 0: Too many neighbor bins (../nbin_standard.cpp:184)
+Last command: run 8000
