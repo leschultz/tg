@@ -1,5 +1,5 @@
-from development.tempinfoparser import inputinfo
-from development.kneefinder import *
+from infoparser import inputinfo
+from kneefinder import *
 
 import pandas as pd
 import numpy as np
