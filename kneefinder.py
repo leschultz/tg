@@ -42,7 +42,7 @@ def knees(x, y):
     ddyspline = dds(xnew)
 
     # Truncate the end data because of strange behavior at high temperatures
-    cut = math.ceil(n*0.75)
+    cut = math.ceil(n*0.4)
 
     # Find the local maxima
     localmaxes = argrelextrema(ddyspline[:cut], np.greater)

@@ -4,8 +4,8 @@ from tgfilecopier import jobiterator
 from tgiterator import findtg
 
 # Copy all dep.in and test.out files from Ben's runs on google drive
-datapath = '/home/nerve/Documents/UW/gdrive/DMREF/MD/Rc_database/TEMP/Pd-Si/Si0.00/667'
-jobiterator(datapath)
+#datapath = '/home/nerve/Documents/UW/gdrive/DMREF/MD/Rc_database/TEMP/'
+#jobiterator(datapath)
 
 # Calculate Tg from the copied files in a path
 path = './'
@@ -19,3 +19,7 @@ import tgaverager
 
 # Create a dataframe containing all Tg averaged by jobs and filtered
 import tgaveragerwithfilter
+
+# Create a dataframe containing all Tg minus runs that crystallize
+import filter_averages_from_crystalization
+import tgaveragercrystallizationfilter
