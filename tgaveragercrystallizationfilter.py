@@ -23,7 +23,7 @@ avgenergycolumns = [
                     'Composition [decimal]',
                     'Steps [-]',
                     'Mean Tg from E-3kT Curve [K]',
-                    'Std Tg from E-3kT Curve [K]',
+                    'STD Tg from E-3kT Curve [K]',
                     'Number of Jobs with E-3kT Curve [K] (no-crystal)',
                     'Number of Removed Jobs with E-3kT Curve [K] (no-crystal)'
                     ]
